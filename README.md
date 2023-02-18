@@ -2,6 +2,7 @@
 <a href="https://www.youtube.com/watch?v=KqgyScOlvV8"><img src="https://i.ibb.co/Mfkw6xT/eternity-5.png" alt="2258810" border="0" /></a>
 
 # **Ari-Ani : MULTI DEVICE WHATSAPP BOT WITH COOL FEATURES**
+
 # fork from Nezuko md
 
 </p>
@@ -49,7 +50,7 @@ underDevelopment
 > git clone https://github.com/Eximinati/Ari-Ani/
 ```
 
-## Installation:
+## Installation
 
 > Before running the below command, make sure you're in the project directory that
 > you've just cloned!!
@@ -71,6 +72,10 @@ To keep it on forever
 <a href="https://github.com/pratyush4932"><img src="https://github.com/pratyush4932.png?size=100" width="100" height="100"></a>
 
 [Pratyush](https://github.com/pratyush4932)
+
+<a href="https://github.com/Eximinati"><img src="https://github.com/Eximinati.png?size=100" width="100" height="100"></a>
+
+[Eximinati](https://github.com/Eximinati)
 | Creator |
 
 # Modifiers
