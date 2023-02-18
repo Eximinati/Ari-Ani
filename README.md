@@ -73,11 +73,6 @@ To keep it on forever
 
 [Pratyush](https://github.com/pratyush4932)
 
-<a href="https://github.com/Eximinati"><img src="https://github.com/Eximinati.png?size=100" width="100" height="100"></a>
-
-[Eximinati](https://github.com/Eximinati)
-| Creator |
-
 # Modifiers
 
 | <a href="https://github.com/Eximinati"><img src="https://github.com/Eximinati.png?size=100" width="100" height="100"></a> | [![Ray_Senpai](https://github.com/RaySenpai69.png?size=100)](https://github.com/RaySenpai69) |
