@@ -5,6 +5,7 @@ module.exports={
     alias:["ahegao"],
     usage:`${prefa}ahegao`,
     desc:"Gives you hentai ahegao image",
+    category: "Nsfw",
     react:"💦",
 
     category:"Nsfw",

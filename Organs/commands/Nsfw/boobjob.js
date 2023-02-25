@@ -5,6 +5,7 @@ module.exports={
     alias:["paizuri"],
     usage:`${prefa}boobjob`,
     desc:"Gives you hentai boobjob image",
+    category: "Nsfw",
     react:"💦",
 
     category:"Nsfw",

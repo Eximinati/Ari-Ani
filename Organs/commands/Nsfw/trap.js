@@ -6,6 +6,7 @@ module.exports={
     alias:["trap"],
     usage:`${prefa}tarp`,
     desc:"Gives you random hentai waifu image",
+    category: "Nsfw",
     react:"💦",
 
     category:"Nsfw",

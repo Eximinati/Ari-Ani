@@ -6,6 +6,7 @@ module.exports={
     alias:["nsfwwaifu"],
     usage:`${prefa}nwaifu`,
     desc:"Gives you random hentai waifu image",
+    category: "Nsfw",
     react:"💦",
 
     category:"Nsfw",
