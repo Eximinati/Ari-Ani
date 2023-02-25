@@ -32,18 +32,18 @@
 ## head
 
 <p align="center">
-  <a href="https://github.com/FantoX001/Atlas-MD/fork">
-    <img src="https://img.shields.io/github/forks/FantoX001/Atlas-MD?label=Fork&style=social">
+  <a href="https://github.com/Eximinati/Ari-Ani/fork">
+    <img src="https://img.shields.io/github/forks/Eximinati/Ari-Ani?label=Fork&style=social">
     
     
-  <a href="https://github.com/FantoX001/Atlas-MD/stargazers">
-    <img src="https://img.shields.io/github/stars/FantoX001/Atlas-MD?style=social">
+  <a href="https://github.com/Eximinati/Ari-Ani/stargazers">
+    <img src="https://img.shields.io/github/stars/Eximinati/Ari-Ani?style=social">
   </a>
 
 <br>
 
-<a href="https://github.com/FantoX001/Atlas-MD">
-    <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/FantoX001/Atlas-MD.visitor-badge&left_text=Total%20People%20Visited">
+<a href="https://github.com/Eximinati/Ari-Ani">
+    <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/Eximinati/Ari-Ani.visitor-badge&left_text=Total%20People%20Visited">
   </a>
   <br><br>
 
