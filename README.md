@@ -39,13 +39,13 @@
 
 | Name | Supported | Reviews |
 | -------- | -------- | -------- |
-| [Railway](railway.app) | ☑️ | relaible but only have limited hours |
-| [Render](render.com) | ☑️ | reliable and free |
-| [Heroku](heroku.com) | ☑️ | reliable but need cc configuration |
-| [Termux](heroku.com) | ☑️ | Use at your own risk |
-| [koyeb](www.koyeb.com) | ☑️ | new github user can't signup/in |
-| [Replit](replit.com) | ☑️ | An online ide |
-| All Os | ☑️ | Vscode and other ide |
+| [Railway](railway.app) | ✅ | relaible but only have limited hours |
+| [Render](render.com) | ✅ | reliable and free |
+| [Heroku](heroku.com) | ✅ | reliable but need cc configuration |
+| [Termux](heroku.com) | ✅ | Use at your own risk |
+| [koyeb](www.koyeb.com) | ✅ | new github user can't signup/in |
+| [Replit](replit.com) | ✅ | An online ide |
+| All Os | ✅ | Vscode and other ide |
 
 ## 🎯 Features
 
