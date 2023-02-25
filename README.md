@@ -100,8 +100,8 @@ MODS=923087880xxx
 
 ## Deploy
 
-[![Deploy on Railway](https://railway.app/button.svg | width=200 | height=50)](https://railway.app/new/template/cusVAZ?referralCode=iTIHSx)
-[![Deploy on Replit](https://i.ibb.co/zrB5kMh/deploy-on-repl.jpg | width=200 | height=50)](https://repl.it/github/Eximinati/Ari-Ani)
+[![Deploy on Railway](https://railway.app/button.svg){width=200 height=50}](https://railway.app/new/template/cusVAZ?referralCode=iTIHSx)
+[![Deploy on Replit](https://i.ibb.co/zrB5kMh/deploy-on-repl.jpg){width=200 height=50}](https://repl.it/github/Eximinati/Ari-Ani)   
       
 ## 🤝 Contributing
 
