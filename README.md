@@ -47,6 +47,8 @@
 | [Replit](replit.com) | ✅ | An online ide |
 | All Os | ✅ | Vscode and other ide |
 
+
+| Name | Supported | Reviews |
 | -------- | -------- | -------- |
 | <a href="https://railway.app" target="_blank">Railway</a> | ✅ | reliable but only have limited hours |
 | <a href="https://render.com" target="_blank">Render</a> | ✅ | reliable and free |
