@@ -56,7 +56,6 @@
 | Name | Supported | Reviews |
 | -------- | -------- | -------- |
 | <a href="https://railway.app/new/template/cusVAZ?referralCode=iTIHSx" target="_blank">Railway</a> | ✅ | reliable but only have limited hours |
-| <a href="https://render.com" target="_blank">Render</a> | ✅ | reliable and free |
 | <a href="https://heroku.com" target="_blank">Heroku</a> | ✅ | reliable but need cc configuration |
 | <a href="https://termux.com" target="_blank">Termux</a> | ✅ | Use at your own risk |
 | <a href="https://www.koyeb.com" target="_blank">Koyeb</a> | ✅ | new github user can't signup/in |
