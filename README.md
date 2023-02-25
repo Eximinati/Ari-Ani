@@ -29,8 +29,6 @@
     </tr>
 </table>
 
-## head
-
 <p align="center">
   <a href="https://github.com/Eximinati/Ari-Ani/fork">
     <img src="https://img.shields.io/github/forks/Eximinati/Ari-Ani?label=Fork&style=social">
