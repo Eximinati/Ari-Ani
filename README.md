@@ -101,7 +101,7 @@ MODS=923087880xxx
 ## Deploy
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/cusVAZ?referralCode=iTIHSx)
-
+[![Deploy on Replit](https://i.ibb.co/zrB5kMh/deploy-on-repl.jpg)](https://repl.it/github/Eximinati/Ari-Ani)
 
 ## 🤝 Contributing
 
