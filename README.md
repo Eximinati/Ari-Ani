@@ -107,7 +107,7 @@
 | [NSFW] Anime | neko() | Returns an image of anime masturbation | `await vajra.nsfw.anime.neko()` |
 | [NSFW] Anime | waifu() | Returns an image of anime masturbation | `await vajra.nsfw.anime.waifu()` |
 | [NSFW] Anime | netorare() | Returns an image of anime masturbation | `await vajra.nsfw.anime.netorare()` |
-| --- | --- | --- | --- |
+
 
 
 ## 🎯 Features
