@@ -65,7 +65,7 @@
 | 📁️ Category | 📝  Method | 🧾  Description | 📍  Usage |
 | ------ | ------ | ------ | ------ |
 
-| --- | --- | --- | --- |
+
 | Anime | wink() | Returns an anime wink image (Soon) | `await vajra.anime.wink()` | 
 | Anime | pat() | Returns an anime pat image (Soon) | `await vajra.anime.pat()` |
 | Anime | hug() | Returns an anime hug image (Soon) | `await vajra.anime.hug()` | 
