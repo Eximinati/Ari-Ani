@@ -1,80 +1,120 @@
+
+
 <div align="center">
-<a href="https://www.youtube.com/watch?v=hmm"><img src="https://i.pinimg.com/564x/a1/83/38/a183388b010c4a47c828ecc20d27b79c.jpg" alt="2258810" border="0" /></a>
+    <img src="https://i.pinimg.com/564x/a1/83/38/a183388b010c4a47c828ecc20d27b79c.jpg" alt="Ari-Ani" />
+</div>
 
-# **Ari-Ani : MULTI DEVICE WHATSAPP BOT WITH COOL FEATURES**
-
-# fork from Nezuko md
-
-</p>
-<p align="center">
-<a href="https://github.com/pratyush4932"><img title="Author" src="https://img.shields.io/badge/Author-Pratyush-red.svg?style=for-the-badge&logo=github"></a>
-</p>
- <a href="https://github.com/Eximinati/Ari-Ani/blob/main/LICENSE">
-  
-<img src='https://img.shields.io/github/license/Eximinati/Ari-Ani/?color=%231e81b0&style=for-the-badge'>
+<h1 align="center">Ari-Ani</h1>
 
 <p align="center">
-<a href="https://github.com/pratyush4932"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%99%A5%EF%B8%8F-blue.svg?style=for-the-badge"></a>
-<a href="https://github.com/is7s7whs"><img title="" src="https://img.shields.io/badge/Maintained-YES-green.svg?style=for-the-badge"></a>
+    <strong>MULTI DEVICE WHATSAPP BOT WITH COOL FEATURES</strong>
 </p>
 
----
+<table align="center">
+    <tr>
+        <th>Platform</th>
+        <th>Supported Versions</th>
+    </tr>
+    <tr>
+        <td>Windows</td>
+        <td>10, 11</td>
+    </tr>
+    <tr>
+        <td>macOS</td>
+        <td>Big Sur, Monterey</td>
+    </tr>
+    <tr>
+        <td>Linux</td>
+        <td>Ubuntu 20.04, Fedora 35</td>
+    </tr>
+</table>
 
-## 📚 Information 📚
+<p align="center">
+  <a href="https://github.com/Eximinati/Ari-Ani/fork">
+    <img src="https://img.shields.io/github/forks/Eximinati/Ari-Ani?label=Fork&style=social">
+    
+    
+  <a href="https://github.com/Eximinati/Ari-Ani/stargazers">
+    <img src="https://img.shields.io/github/stars/Eximinati/Ari-Ani?style=social">
+  </a>
 
-> A simple and easy-to-use WhatsApp bot project with cool Features based on Multi-Device Baileys and written in JavaScript.
+<br>
 
-## 💖 Ari-Ani 💖
+<a href="https://github.com/Eximinati/Ari-Ani">
+    <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/Eximinati/Ari-Ani.visitor-badge&left_text=Total%20People%20Visited">
+  </a>
+  <br><br>
 
-> This is a open source project by the TEAM ETERNITY. After forking If you change any codes and claim That's yours then Our Team will Take Action In that case so be careful and give Credit To The original Devloper of that Bot. if you Have any Questions Then Join Our support Group To Report Your Issues.
+## 🚀 Getting Started
 
-[![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/JCCZPbPUbM1536n62zSFZi)
+- Written in [NodeJs](https://nodejs.org/)
+- Use [Yarn](https://yarnpkg.com) or [npm](npmjs.com)
+- Built with [Baileys](https://github.com/adiwajshing/Baileys)
 
-## 💡 License
+## Supported Hosting Sites
 
-Ari-Ani is free and open-source software licensed under the [GNU Affero General Public License v3.0](https://github.com/EternityBots/Ari-Ani/blob/main/LICENSE).
+| Name | Supported | Reviews | Deploy |
+| -------- | -------- | -------- | -------- |
+| <a href="https://railway.app/new/template/cusVAZ?referralCode=iTIHSx" target="_blank">Railway</a> | ✅ | reliable but only have limited hours | click to deploy |
+| <a href="https://replit.com/new/github/Eximinati/Ari-Ani" target="_blank">Replit</a> | ✅ | An online ide | click to deploy |
+| <a href="https://heroku.com" target="_blank">Heroku</a> | ✅ | reliable but need cc configuration |
+| <a href="https://termux.com" target="_blank">Termux</a> | ✅ | Use at your own risk |
+| <a href="https://www.koyeb.com" target="_blank">Koyeb</a> | ✅ | new github user can't signup/in |
+| All Os | ✅ | Vscode and other ide |
 
-## RAILWAY
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/xhqo2N?referralCode=QaaU0X)
+## 🎯 Features
 
-## KOYEB
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=docker&image=quay.io/raysenpai69/nezuko:main&env[PORT]=8000&env[PREFIX]&&env[MONGODB]&&env[SESSION_ID]=NEZUKO&env[WEATHER_API]&&env[GOOGLE_API]&&env[MODS]&&env[MAL_USERNAME]=PratyushOP&env[MAL_PASSWORD]=8scv98gxDYHVBry&name=nezuko)
-
-underDevelopment
-
-## Clone this project
-
-```bash
-> git clone https://github.com/Eximinati/Ari-Ani/
-```
+- Env Variable Function.
+- No Ban (Use Normal Whatsapp).
+- High Security than other bots.
+- Single Prefix Bot :).
 
 ## Installation
 
-> Before running the below command, make sure you're in the project directory that
-> you've just cloned!!
+
+- First install
+```bash
+> Nodejs
+> GitHub 
+> Yarn (npm i yarn -g)
+```
+- Create a file .env where all the environment variables will be stored .
+
+- Config the bot accordingly.
+
+```js
+PREFIX=.
+NAME=Ari-Ani
+MONGO_URI=mongodb://user:password@localhost:27017/Ari-Ani
+MODS=923087880xxx
+```
+- Then open terminal (eg; vscode)
 
 ```bash
-  > yarn install
+> git clone https://github.com/Eximinati/Ari-Ani
+> cd Ari-Ani
+> yarn install  
 > yarn start
-
-To keep it on forever
- > node kyoeb.js
 ```
 
-## HELP
+## Deploy
 
-> Please give this repo a ⭐ if you liked it.
+<a href="https://railway.app/new/template/cusVAZ?referralCode=iTIHSx"><img src="https://railway.app/button.svg" width="200" height="50"></a>
+      <br><br>
+<a href="https://repl.it/github/Eximinati/Ari-Ani"><img src="https://i.ibb.co/zrB5kMh/deploy-on-repl.jpg" width="200" height="50"></a>
+      
+## 🤝 Contributing
 
-# ✨ Creator ✨
++ Feel free to open issues regarding any problems or if you have any feature requests.
++ You can pull request any modification.
 
-<a href="https://github.com/pratyush4932"><img src="https://github.com/pratyush4932.png?size=100" width="100" height="100"></a>
+## 📜 License
 
-[Pratyush](https://github.com/pratyush4932)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-# Modifiers
+## 🧑‍💻 Development Team
 
-| <a href="https://github.com/Eximinati"><img src="https://github.com/Eximinati.png?size=100" width="100" height="100"></a> | [![Ray_Senpai](https://github.com/RaySenpai69.png?size=100)](https://github.com/RaySenpai69) |
-| ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| [Aku](https://github.com/Eximinati)                                                                                       | [Ray_Senpai](https://github.com/RaySenpai69)                                                 |
+<a href="https://github.com/pratyush4932"><img src="https://github.com/Eximinati.png?size=100" width="100" height="100"></a>
+
+[Eximinati](https://github.com/Eximinati)
