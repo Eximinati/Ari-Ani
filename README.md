@@ -56,10 +56,10 @@
 | Name | Supported | Reviews | Deploy |
 | -------- | -------- | -------- | -------- |
 | <a href="https://railway.app/new/template/cusVAZ?referralCode=iTIHSx" target="_blank">Railway</a> | ✅ | reliable but only have limited hours | click to deploy |
+| <a href="https://replit.com/new/github/Eximinati/Ari-Ani" target="_blank">Replit</a> | ✅ | An online ide | click to deploy |
 | <a href="https://heroku.com" target="_blank">Heroku</a> | ✅ | reliable but need cc configuration |
 | <a href="https://termux.com" target="_blank">Termux</a> | ✅ | Use at your own risk |
 | <a href="https://www.koyeb.com" target="_blank">Koyeb</a> | ✅ | new github user can't signup/in |
-| <a href="https://replit.com/new/github/Eximinati/Ari-Ani" target="_blank">Replit</a> | ✅ | An online ide | click to deploy |
 | All Os | ✅ | Vscode and other ide |
 
 
