@@ -1,15 +1,5 @@
 const axios = require("axios");
-const fs = require("fs"); 
-const { unlink } = require("fs").promises;
-const child_process = require("child_process");
-const sleep = (ms) => {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
-};
 const { fetchJson, GIFBufferToVideoBuffer } = require("../../../lib/Function");
-
-
 module.exports = {
   name: "yeet",
   alias: ["animeyeet"],
