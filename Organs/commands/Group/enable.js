@@ -1,4 +1,5 @@
 require("../../../handler/MessageHandler");
+
 module.exports = {
   name: "enable",
   alias: ["act", "register"],
@@ -40,5 +41,14 @@ module.exports = {
       await db.push("events", `${m.from}`);
       m.reply("💮 Successfully Enabled *Events*");
     }
+
+    if (args[0] == "economy") {
+      if(!mods.includes(m.sender)) return m.reply("This command is only for mods")
+      if (economy.includes(`${m.from}`)) return m.reply("🛡 *Economy* is already enabled");
+
+      await db.push("economy", `${m.from}`);
+      m.reply("💮 Successfully Enabled *Economy*");
+    }
+
   },
 };

@@ -7,8 +7,10 @@ module.exports={
     desc:"Claim daily reward...",
     category:"Economy",
     react:"✅",
-    start:async(client,m,{command,prefix,text,pushName})=>{
-          
+    start:async(client,m,{command,prefix,economy,text,pushName})=>{
+
+      if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to see Economy group link*')
+         
       const tag = m.sender.substring(3, 7)
         const result = await cs.daily({
             user: m.sender,

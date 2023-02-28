@@ -7,7 +7,9 @@ module.exports={
     desc:"See your bank account",
     category:"Economy",
     react:"✅",
-    start:async(client,m,{command,prefix,text , pushName,args})=>{
+    start:async(client,m,{command,prefix,text , economy, pushName,args})=>{
+        if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to get Casino group link*')
+       
         let tag = m.sender.substring(3, 7)
     const result = await cs.balance({
         user: m.sender,

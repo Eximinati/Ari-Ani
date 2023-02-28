@@ -22,11 +22,20 @@ await db.pull ('mods',`${m.from}`)
 
 await db.pull('nsfw',`${m.from}`)
   m.reply('💮 Successfully Disabled *Nsfw*')
-  }if(args[0]=="events"||args[0]=="event"){
+  }
+  if(args[0]=="events"||args[0]=="event"){
     if(!wlc.includes(`${m.from}`)) return m.reply("🛡 *Events* is not enabled")
 
     await db.pull('events',`${m.from}`)
       m.reply('💮 Successfully Disabled *Events*')
   }
+
+  if (args[0] == "economy") {
+    if(!mods.includes(m.sender)) return m.reply("This command is only for mods")
+    if(!economy.includes(`${m.from}`)) return m.reply("🛡Use .support to get economy group link")
+
+await db.pull('nsfw',`${m.from}`)
+m.reply('💮 Successfully Disabled *Economy*')
+}
     }
 }

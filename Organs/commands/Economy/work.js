@@ -7,8 +7,9 @@ module.exports={
     desc:"work for money :)",
     category:"Economy",
     react:"✅",
-    start:async(client,m,{command,prefix,text,args , pushName} )=>{
-        let result = await cs.work({
+    start:async(client,m,{command,prefix,text,args ,economy, pushName} )=>{
+        if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to see Economy group link*')
+         let result = await cs.work({
             user: m.sender,
             guild: 'Ari-Ani',
             maxAmount: 100,

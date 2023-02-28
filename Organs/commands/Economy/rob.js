@@ -7,7 +7,8 @@ module.exports={
     desc:"rob the money :)",
     category:"Economy",
     react:"✅",
-    start:async(client,m,{command,prefix,text,participants , pushName, mentionByTag} )=>{
+    start:async(client,m,{command,prefix,text,participants ,economy, pushName, mentionByTag} )=>{
+      if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to see Economy group link*')
         // let user = args[0].user
         // if (user.bot || user === client.user) return message.reply("This user is a bot.");
         // if (!user) return message.reply('Sorry, you forgot to mention somebody.');

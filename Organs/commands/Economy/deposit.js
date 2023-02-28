@@ -7,8 +7,10 @@ module.exports={
     desc:"deposit to bank account",
     category:"Economy",
     react:"✅",
-    start:async(client,m,{command,prefix,text,args , pushName} )=>{
+    start:async(client,m,{command,prefix,text,args ,economy, pushName} )=>{
 
+      if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to see Economy group link*')
+        
       const tag = m.sender.substring(3, 7)
     const amount = parseInt(q);
 if (isNaN(amount) || amount == 0) {

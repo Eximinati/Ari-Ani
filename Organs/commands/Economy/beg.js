@@ -7,7 +7,9 @@ module.exports={
     desc:"Why working for money when you can beg for it :)",
     category:"Economy",
     react:"✅",
-    start:async(client,m,{command,prefix,text,args , pushName, mentionByTag} )=>{
+    start:async(client,m,{command,prefix,text,args , economy, pushName, mentionByTag} )=>{
+      if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to see Economy group link*')
+        
         try {
             const result = await cs.beg({
               user: m.sender,

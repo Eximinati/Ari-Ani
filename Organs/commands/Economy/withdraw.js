@@ -7,7 +7,8 @@ module.exports={
     desc:"withdraw money from bank account",
     category:"Economy",
     react:"✅",
-    start:async(client,m,{command,prefix,text,args , pushName} )=>{
+    start:async(client,m,{command,prefix,text,args ,economy, pushName} )=>{
+      if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to see Economy group link*')
         const amount = parseInt(q);
 if (isNaN(amount) || amount == 0) {
   return m.reply(`❌ Please provide a valid amount. Usage: ${prefix}withdraw [amount eg. 100].`);

@@ -78,6 +78,8 @@ module.exports = async (client, m, commands, chatUpdate) => {
     //////////Database\\\\\\\\\\\\\\\\
     const _mods = await db.get("mods");
     global.mods = _mods || [];
+    const _economy = await db.get("economy");
+    global.economy = _economy || [];
     const _ban = await db.get("ban");
     global.ban = _ban || [];
     const _nsfw = await db.get("nsfw");
@@ -273,6 +275,7 @@ module.exports = async (client, m, commands, chatUpdate) => {
       wlc,
       mods,
       quoted,
+      economy,
       flags,
       mentionByTag,
       mime,

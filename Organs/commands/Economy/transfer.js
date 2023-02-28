@@ -7,44 +7,10 @@ module.exports={
     desc:"transfer to user account",
     category:"Economy",
     react:"✅",
-    start:async(client,m,{command,prefix,text,args ,q , pushName , mentionByTag} )=>{
+    start:async(client,m,{command,prefix,text,args,economy ,q , pushName , mentionByTag} )=>{
       
-       /* try{
-       
-        const anu = args.join(' ').split(' ')
-        if (!anu) return m.reply(`❌ No amount provided!`)
-        if (isNaN(anu[0]) == true) return m.reply(`❌ No amount provided!`)
-        if (!anu[0]) return m.reply(`❌ No amount provided!`)
-         if (anu[0].includes("-")) return m.Sreply("You can't send negitive money.")
-         const mention= await mentionByTag
-        const users =await (mention[0]) || m.msg.contextInfo.participant
-        if ( m.sender == users) return m.reply("❌ You can't transfer money to yourself")
-             
-          let money = parseInt(anu[0]);
-          const wheretoPutMoney = 'wallet'; // Or bank
-              let result1 = await cs.balance({
-            user: m.sender,
-            guild: 'Ari-Ani'
-          });
-          if ( money > parseInt(result1.wallet) || !parseInt(result1.wallet) == money) return m.reply(`You don't have enough money in your wallet.`);
-          let result2 = await cs.removeMoney({
-            user: m.sender,
-            guild: 'Ari-Ani',
-            amount: money,
-            wheretoPutMoney: wheretoPutMoney
-          });
-          let result3 = await cs.addMoney({
-            user: users,
-            guild: 'Ari-Ani',
-            amount: money,
-            wheretoPutMoney: wheretoPutMoney
-          });
-         return client.sendMessage(m.from,{text:`🏦 *${pushName}*, Successfully transfered *¥${money}* to @${users.split('@')[0]}`,mentions:[users]},{quoted:m})
-        } catch (err) {
-            console.log(err)
-            return m.reply("❌ Couldn't find any userID in context, Try Again.")
-        
-        }*/
+      if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to see Economy group link*')
+      
 
         try {
             const amount = parseInt(args[0]);
