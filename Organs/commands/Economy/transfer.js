@@ -5,7 +5,7 @@ module.exports={
     alias:["transfer"],
     usage:`${prefa}transfer`,
     desc:"transfer to user account",
-    category:"economy",
+    category:"Economy",
     react:"✅",
     start:async(client,m,{command,prefix,text,args ,q , pushName , mentionByTag} )=>{
       
