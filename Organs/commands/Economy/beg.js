@@ -8,7 +8,7 @@ module.exports={
     category:"Economy",
     react:"✅",
     start:async(client,m,{command,prefix,text,args , economy, pushName, mentionByTag} )=>{
-      if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to see Economy group link*')
+      if(!economy.includes(`${m.from}`)) return m.reply('*Use .support to see Economy group link*')
         
         try {
             const result = await cs.beg({

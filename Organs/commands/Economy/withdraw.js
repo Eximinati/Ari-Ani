@@ -8,7 +8,7 @@ module.exports={
     category:"Economy",
     react:"✅",
     start:async(client,m,{command,prefix,text,args ,economy, pushName} )=>{
-      if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to see Economy group link*')
+      if(!economy.includes(`${m.from}`)) return m.reply('*Use .support to see Economy group link*')
         const amount = parseInt(q);
 if (isNaN(amount) || amount == 0) {
   return m.reply(`❌ Please provide a valid amount. Usage: ${prefix}withdraw [amount eg. 100].`);

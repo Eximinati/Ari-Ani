@@ -8,7 +8,7 @@ module.exports={
     category:"Economy",
     react:"✅",
     start:async(client,m,{command,prefix,text , economy, pushName,args})=>{
-        if(!economy.includes(`${m.from}`)) return m.reply('*Use .help to get Casino group link*')
+        if(!economy.includes(`${m.from}`)) return m.reply('*Use .support to get Casino group link*')
        
         let tag = m.sender.substring(3, 7)
     const result = await cs.balance({
