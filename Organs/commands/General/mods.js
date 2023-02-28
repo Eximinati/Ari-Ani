@@ -8,12 +8,13 @@ module.exports={
     category:"General",
     react:"✅",
 
-    start:async(client,m,{})=>{
-        const mod= owner
+    start:async(client,m,{yaOwn})=>{
+        const mod= yaOwn
         let mo=`
 *🎉 Ari-Ani Mods 🎉*\n`
 for(let i=0;i<mod.length;i++){
-    const um= await client.username(mod[i]+'@s.whatsapp.net')
+    const um= await client.username(mod[i])
+    //const um= await client.username(mod[i]+'@s.whatsapp.net')
     mo+=`\n✨${i+1}\n*👤 Name:* ${um}\n*📱 Contact:* http://wa.me/+${mod[i].split("@")[0]}\n`
 }
 await  client.sendMessage(m.from,{image:{url:'https://images2.alphacoders.com/104/1044538.png'},caption:mo},{quoted:m})  

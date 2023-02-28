@@ -6,7 +6,8 @@ if (!gg) {
   gg = "923265825610,923087880256";
 }
 
-global.owner = gg.split(",");
+let owners = gg.split(",");
+global.owner = owners.map(owner => owner + '@s.whatsapp.net');
 global.mongodb = process.env.MONGODB || "mongodb+srv://Ali:ariani@testicles.vzog1fk.mongodb.net/?retryWrites=true&w=majority";
 global.prefa = process.env.PREFIX || ".";
 // global.ggle = process.env.GOOGLE_API || "none";

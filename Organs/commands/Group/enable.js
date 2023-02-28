@@ -10,7 +10,7 @@ module.exports = {
   start: async (
     client,
     m,
-    { text, args, prefix, isBotAdmin, isAdmin, mentionByTag }
+    { text, args, prefix,iscreator, isBotAdmin, isAdmin, yaOwn }
   ) => {
     if (!isAdmin)
       return client.sendMessage(
@@ -43,7 +43,7 @@ module.exports = {
     }
 
     if (args[0] == "economy") {
-      if(!mods.includes(m.sender)) return m.reply("This command is only for mods")
+      if(!yaOwn.includes(m.sender)) return m.reply("This command is only for mods")
       if (economy.includes(`${m.from}`)) return m.reply("🛡 *Economy* is already enabled");
 
       await db.push("economy", `${m.from}`);

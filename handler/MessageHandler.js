@@ -78,6 +78,10 @@ module.exports = async (client, m, commands, chatUpdate) => {
     //////////Database\\\\\\\\\\\\\\\\
     const _mods = await db.get("mods");
     global.mods = _mods || [];
+    const _owner = global.owner;
+    global.yaOwn = _owner || [];
+    const _own= await db.get('owner')
+   global.own=_own||[]
     const _economy = await db.get("economy");
     global.economy = _economy || [];
     const _ban = await db.get("ban");
@@ -275,6 +279,8 @@ module.exports = async (client, m, commands, chatUpdate) => {
       wlc,
       mods,
       quoted,
+      own,
+      yaOwn,
       economy,
       flags,
       mentionByTag,

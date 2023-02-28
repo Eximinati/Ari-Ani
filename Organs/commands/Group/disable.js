@@ -6,7 +6,7 @@ module.exports = {
     cool:3,
     react:"✅",
     category: "Group",
-    start: async(client, m, { text, prefix, args,isBotAdmin,isAdmin,mentionByTag}) => {
+    start: async(client, m, { text, prefix, args,isBotAdmin,isAdmin,yaOwn}) => {
       if(!isAdmin) return client.sendMessage(m.from,{text:"This is admin only command"},{quoted:m})
       if(!isBotAdmin) return m.reply("Make me admin to use this command")
       if(!text) return m.reply("No option provided!!")
@@ -31,7 +31,7 @@ await db.pull('nsfw',`${m.from}`)
   }
 
   if (args[0] == "economy") {
-    if(!mods.includes(m.sender)) return m.reply("This command is only for mods")
+    if(!yaOwn.includes(m.sender)) return m.reply("This command is only for mods")
     if(!economy.includes(`${m.from}`)) return m.reply("🛡Use .support to get economy group link")
 
 await db.pull('nsfw',`${m.from}`)
