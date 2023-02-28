@@ -18,6 +18,7 @@
     "chan": "^0.6.1",
     "child_process": "^1.0.2",
     "crypto": "^1.0.1",
+    "currency-system": "^2.8.9",
     "discord-xp": "^1.1.16",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
@@ -66,8 +67,8 @@
     "start": "node heart.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Eternity-Team",
+  "author": "Aku",
   "license": "AGPL-3.0",
-  "repository": "https://github.com/EternityBots/Nezuko.git",
+  "repository": "https://github.com/Eximinati/Ari-Ani.git",
   "private": false
 }

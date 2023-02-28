@@ -14,12 +14,20 @@ const moment = require("moment-timezone");
 const chalk = require("chalk");
 const cool = new Collection();
 const { table } = require("console");
-const Mongo_URL = "mongodb+srv://Ali:ariani@testicles.vzog1fk.mongodb.net/?retryWrites=true&w=majority";
+const Mongo_URL = mongodb;
 global.Levels = require("discord-xp");
 Levels.setURL(Mongo_URL);
 console.log("Connected to the database1");
 const prefix = prefa;
 const mongoose = require("mongoose");
+
+//currency main?
+const CurrencySystem = require("currency-system");
+const cs = new CurrencySystem;
+cs.setMongoURL(Mongo_URL);
+cs.setDefaultWalletAmount('100');
+
+///close currency economy
 main().catch((err) => console.log(err));
 
 async function main() {
@@ -201,7 +209,7 @@ module.exports = async (client, m, commands, chatUpdate) => {
       ];
       let buth = {
         text: `*Command Info*\n\n${data.join("\n")}`,
-        footer: "Eternity",
+        footer: "Ari-Ani",
         buttons: buttonss,
         headerType: 1,
       };

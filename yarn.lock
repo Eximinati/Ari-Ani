@@ -2067,6 +2067,14 @@ css-what@^6.1.0:
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-6.1.0.tgz#fb5effcf76f1ddea2c81bdfaa4de44e79bac70f4"
   integrity sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==
 
+currency-system@^2.8.9:
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/currency-system/-/currency-system-2.8.9.tgz#6e025af663c9301ccc9f105b12444b80c15a0938"
+  integrity sha512-2+smrkV3u3ZiocaxB13XfMoUYDVUXrcTV2TwU9bVAL5RzLrVw6n6N6rXOVJAoCG6StJQjMicjMkz4fbjK8/cLA==
+  dependencies:
+    mongoose "^5.13.15"
+    node-fetch "^2.6.1"
+
 curve25519-js@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/curve25519-js/-/curve25519-js-0.0.4.tgz#e6ad967e8cd284590d657bbfc90d8b50e49ba060"
@@ -3633,6 +3641,26 @@ mongoose@^5.11.11:
     sift "13.5.2"
     sliced "1.0.1"
 
+mongoose@^5.13.15:
+  version "5.13.16"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.13.16.tgz#df317c87de6762ae5dc0c363aff9f8e357074ebb"
+  integrity sha512-kBNB+BfaQjn3Jjh1SfdZZub70pde9dI0sA8VN6AnnCOeK4TzbLDyB0lBmPBOajppm6U9orde5YfTRyyVa1U45w==
+  dependencies:
+    "@types/bson" "1.x || 4.0.x"
+    "@types/mongodb" "^3.5.27"
+    bson "^1.1.4"
+    kareem "2.3.2"
+    mongodb "3.7.3"
+    mongoose-legacy-pluralize "1.0.2"
+    mpath "0.8.4"
+    mquery "3.2.5"
+    ms "2.1.2"
+    optional-require "1.0.x"
+    regexp-clone "1.0.0"
+    safe-buffer "5.2.1"
+    sift "13.5.2"
+    sliced "1.0.1"
+
 mongoose@^6.5.3:
   version "6.9.1"
   resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.9.1.tgz#4c6648806fb89b8d8aa4fc60ddc490442c971057"
@@ -3815,7 +3843,7 @@ node-fetch@2.6.7:
   dependencies:
     whatwg-url "^5.0.0"
 
-node-fetch@^2.6.0:
+node-fetch@^2.6.0, node-fetch@^2.6.1:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.9.tgz#7c7f744b5cc6eb5fd404e0c7a9fec630a55657e6"
   integrity sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==

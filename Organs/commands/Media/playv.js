@@ -30,7 +30,7 @@ await client.sendMessage(m.from,{
     contextInfo:{
         externalAdReply:{
             title:anu.title,
-            body: "by Eternity-Team",
+            body: "Ari-Ani",
             thumbnail: await fetchBuffer(anu.thumbnail),
             mediaType:2,
             mediaUrl:anu.url,

@@ -1,0 +1,37 @@
+const CurrencySystem = require("currency-system");
+const cs = new CurrencySystem;
+module.exports={
+    name:"leaderboard",
+    alias:["lb"],
+    usage:`${prefa}leaderboard`,
+    desc:"Our guilds Leaderboard",
+    category:"economy",
+    react:"✅",
+    start:async(client,m,{command,prefix,text,args , pushName} )=>{
+        let data = await cs.leaderboard('Ari-Ani');
+if (data.length < 1) return m.reply("Nobody's in leaderboard yet.");
+const msg = {
+  content: "*Leaderboard:*",
+  footerText: `Showing the top ${Math.min(10, data.length)} users`,
+  buttons: [],
+  body: []
+};
+let pos = 0;
+// This is to get First 10 Users :)
+data.slice(0, 10).map(e => {
+  if (!client.contacts[e.userID]) {
+    console.log(`Contact not found for userID ${e.userID}`);
+    return;
+  }
+  pos++;
+  msg.body.push(`${pos} - *${client.contacts[e.userID].name || e.userID}*\nWallet: **${e.wallet}** - Bank: **${e.bank}**\n\n`);
+});
+
+m.reply(msg).catch(error => {
+  console.error(error);
+  m.reply("Failed to send leaderboard message.");
+});
+
+        
+    }
+}

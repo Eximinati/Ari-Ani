@@ -68,14 +68,14 @@ let cm=commands.keys()
                 .map((cmd) => cmd.name).join(", ")}\`\`\`\n\n`
         }
         txt += `📗 Type *${prefix}help* <Command-Name> or <Command-Name> --info\n`; 
-    const eternity = await wall.getAnimeWall3()
-    const eternitylogo = eternity[Math.floor(Math.random() * eternity.length)]
+    const ari = await wall.getAnimeWall3()
+    const arilogo = ari[Math.floor(Math.random() * ari.length)]
     const Button = [
         {buttonId: `${prefix}Ari-Ani`, buttonText: {displayText: '🌟 Script',}, type: 2},
         {buttonId: `${prefix}support`, buttonText: {displayText: '🎐 Support'}, type: 1},
     ]
     let hbutto = {
-        image: {url: eternitylogo.image},
+        image: {url: arilogo.image},
         caption: txt,
         footer: 'Ari-Ani',
         buttons: Button,

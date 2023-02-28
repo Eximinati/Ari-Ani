@@ -1,0 +1,47 @@
+const CurrencySystem = require("currency-system");
+const cs = new CurrencySystem;
+const { createButtonsMessage } = require('@adiwajshing/baileys');
+module.exports={
+    name:"use",
+    alias:["use"],
+    usage:`${prefa}use`,
+    desc:"use",
+    category:"Economy",
+    react:"✅",
+    start:async(client,m,{command,prefix,text,args , pushName, mentionByTag} )=>{
+        let item = args[0].value;
+    // if (!item) return m.reply("What item you wana use?")
+    // if (parseInt(item)) return m.reply("Please use the name of the item, not the ID.")
+    let haveItem = false;
+    const arr = await cs.getUserItems({
+        user: m.sender,
+        guild: 'Ari-Ani',
+    });
+    let i;
+    for (key in arr.inventory) {
+        if (arr.inventory[key].name.toLowerCase().includes(item.toLowerCase())) haveItem = true
+        i = key;
+    };
+    if (haveItem) {
+        let money = Math.floor((Math.random() * 10) + 1) * 100 // 100 - 1000
+        let result = await cs.addMoney({
+            user: m.sender,
+            guild: 'Ari-Ani',
+            amount: money,
+            wheretoPutMoney: 'wallet'
+        });
+        let r2 = await cs.removeUserItem({
+            user: m.sender,
+            guild: 'Ari-Ani',
+            item: i + 1,
+            amount: 1
+        });
+        if (result.error || r2.error) {
+            console.log(result);
+            console.log(r2);
+            return m.reply("Unknown error occured see console.")
+        } else return m.reply("You've used " + item + " and earned $" + money)
+
+    } else return m.reply("Please buy the item first!")
+}
+}
