@@ -15,20 +15,14 @@ module.exports = {
       }
   
       const groupId = m.from;
-  
-      
-        const group = await Group.findOne({ groupId });
-        if (!group || !group.enabled) {
-          return m.reply(`Economy is not enabled in this group. Type '${prefix}support' to see casino group link`);
-        }
-      
-  
-       
- 
+      const group = await Group.findOne({ groupId });
+      if (!group || !group.enabled) {
+        return m.reply(`Economy is not enabled in this group. Type '${prefix}support' to see casino group link`);
+      }
+        
     const userId = m.sender;
     let economy = await economyJs.findOne({ userId: userId });
-
-    // const tag = economy.tag Tag: ${tag}
+    
     if (!economy) {
       economy = new economyJs({ userId: userId });
       await economy.save();
@@ -38,9 +32,6 @@ module.exports = {
     const bank = economy.bank.toLocaleString();
 
     let walText = `\n*❁財⍩𝔹𝕒𝕟𝕜 - 💴*\n\nName: ${pushName}\n\nBank: ${bank}`
-    //m.reply(`Your balance is: User:${userId}\nWallet: ${wallet} coins\nBank: ${bank} coins ++++++++++++ ${economy.tag}`);
-
-    
     let button = [
         { buttonId: `${prefix}wallet`, buttonText: { displayText: 'Wallet' }, type: 1 },
       ];
