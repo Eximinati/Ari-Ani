@@ -65,6 +65,7 @@
 ## 🎯 Features
 
 - Env Variable Function.
+- Public Js Economy.
 - No Ban (Use Normal Whatsapp).
 - High Security than other bots.
 - Single Prefix Bot :).
