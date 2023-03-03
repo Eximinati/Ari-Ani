@@ -1,0 +1,49 @@
+const Economy = require("../../../models/economic");
+
+module.exports = {
+  name: 'inv',
+  alias: ['inv'],
+  usage: `${prefa}sell1 <itemNumber>`,
+  desc: 'Show the items in your inventory.',
+  category: 'Economy',
+  react: '✅',
+  async start(client, m) {
+//     const userId = m.sender;
+//     const economyData = await Economy.findOne({ userId });
+    
+//     if (!economyData) return m.reply('You do not have an economy account yet.');
+//     let data = Economy.inventory;
+//     let datA = data.name
+//     console.log(data)
+//     console.log(datA)
+//     const inventoryData = economyData.inventory;
+//     if (!inventoryData || inventoryData.length === 0) {
+//       return m.reply('You do not have any items in your inventory.');
+//     }
+
+//     const inventoryList = inventoryData.map((item, index) => `${index + 1}. ${item.name} x${item.number}`).join('\n');
+    
+//     m.reply(`Your inventory:\n${inventoryList}`);
+//   }
+// };
+
+
+// ...
+
+const userId = m.sender;
+const economyData = await Economy.findOne({ userId: userId });
+
+if (!economyData) {
+  return m.reply('You do not have an economy account yet.');
+}
+
+const inventoryData = economyData.inventory;
+if (!inventoryData || inventoryData.length === 0) {
+  return m.reply('You do not have any items in your inventory.');
+}
+
+inventoryData.forEach((item, index) => {
+  console.log(`${index + 1}. ${item.name} x${item.number}`);
+});
+}
+ };

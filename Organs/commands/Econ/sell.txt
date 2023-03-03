@@ -1,0 +1,106 @@
+// const economy = require('../../../models/economic')
+// const shopItems  = require("../../../models/shop")
+// module.exports = {
+//   name: 'sell1',
+//   alias:["sell1"],
+//   usage:`${prefa}buy`,
+//   desc:"View your deposit1.",
+//   category:"Economy",
+//   react:"✅",
+//     start:async(client,m,{command,prefix,pushname , pushName,args})=>{
+//         const userId = m.sender;
+//         const itemNumber = parseInt(`${q}`);
+//         const item = shopItems.find(item => item.number === itemNumber);
+    
+//         if (!item) {
+//           return m.reply('That item does not exist.');
+//         }
+    
+//         const economyData = await economy.findOne({ userId: userId });
+//         if (!economyData) {
+//           return m.reply('You do not have an economy account yet.');
+//         }
+    
+//         if (!economyData.inventory.includes(item.name)) {
+//           return m.reply(`You do not have ${item.name} in your inventory.`);
+//         }
+    
+//         economyData.wallet += item.price;
+//         economyData.inventory.splice(economyData.inventory.indexOf(item.name), 1);
+//         await economyData.save();
+    
+//         m.reply(`You have sold ${item.name} for ${item.price} coins.`);
+  
+//     }
+// }
+
+const economy = require('../../../models/economic');
+const shopItems = require('../../../models/shop');
+
+module.exports = {
+  name: 'sell1',
+  alias: ['sell1'],
+  usage: `${prefa}sell1 <itemNumber>`,
+  desc: 'Sell an item from your inventory for coins.',
+  category: 'Economy',
+  react: '✅',
+  start: async (client, m, { command, prefix, pushname, pushName, args }) => {
+    const userId = m.sender;
+    const itemNumber = parseInt(`1`);
+    const item = shopItems.find((item) => item.number === itemNumber);
+
+    if (!item) {
+      return m.reply('That item does not exist.');
+    }
+
+    const economyData = await economy.findOne({ userId: userId });
+    if (!economyData) {
+      return m.reply('You do not have an economy account yet.');
+    }
+
+    const inventoryItem = economyData.inventory.find(
+      (invItem) => invItem.name === item.name
+    );
+    if (!inventoryItem || inventoryItem.number === 0) {
+      return m.reply(`You do not have ${item.itemName} in your inventory.`);
+    }
+
+    economyData.wallet += item.price;
+    inventoryItem.number--;
+
+    await economyData.save();
+
+    m.reply(`You have sold ${item.name} for ${item.price} coins.`);
+  },
+};
+
+
+
+/*module.exports = {
+  name: 'sell',
+  description: 'Sell items from your inventory.',
+  async execute(client, message, args) {
+    const userId = message.author.id;
+    let economy = await Economy.findOne({ userId });
+
+    if (!economy || economy.items.length == 0) {
+      return message.channel.send(`You do not have any items to sell.`);
+    }
+
+    const itemName = args.join(' ');
+    const itemIndex = economy.items.findIndex((item) => item.name.toLowerCase() === itemName.toLowerCase());
+
+    if (itemIndex < 0) {
+      return message.channel.send(`You do not have ${itemName} in your inventory.`);
+    }
+
+    const item = economy.items[itemIndex];
+    economy.wallet += item.price;
+    economy.items.splice(itemIndex, 1);
+    await economy.save();
+
+    message.channel.send(`You sold ${item.name} for ${item.price} coins.`);
+  }
+}
+
+*/

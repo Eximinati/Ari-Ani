@@ -21,12 +21,6 @@ console.log("Connected to the database1");
 const prefix = prefa;
 const mongoose = require("mongoose");
 
-//currency main?
-const CurrencySystem = require("currency-system");
-const cs = new CurrencySystem;
-cs.setMongoURL(Mongo_URL);
-cs.setDefaultWalletAmount('100');
-
 ///close currency economy
 main().catch((err) => console.log(err));
 
@@ -117,10 +111,7 @@ module.exports = async (client, m, commands, chatUpdate) => {
       );
 
     const mentionByTag =
-      type == "extendedTextMessage" &&
-      m.message.extendedTextMessage.contextInfo != null
-        ? m.message.extendedTextMessage.contextInfo.mentionedJid
-        : [];
+      type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.mentionedJid : [];
     const flags = args.filter((arg) => arg.startsWith("--"));
     if (body.startsWith(prefix) && !icmd) {
       var rae = `https://telegra.ph/file/75368c6fe4abb9d0f2bb9.png`;

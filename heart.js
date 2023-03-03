@@ -26,7 +26,8 @@ const { Collection, Simple } = require("./Organs/typings");
 const Welcome = require("./handler/EventHandler");
 const { serialize, WAConnection } = Simple;
 const FileType = require("file-type");
-const mongodb = "mongodb+srv://Ali:ariani@testicles.vzog1fk.mongodb.net/?retryWrites=true&w=majority";
+const mongodb = mongodb;
+//mongodb
 const Commands = new Collection();
 const cfonts = require("cfonts");
 const mongoose = require("mongoose");

@@ -1,0 +1,95 @@
+/*const  items = require("../../../models/shop")
+const Player = require("../../../models/economic")
+
+module.exports = {
+  name: 'buy',
+  alias: ['b'],
+  desc: 'Buy an item from the shop.',
+  category: 'Economy',
+  react: '💰',
+  usage: '/buy <item number>',
+  start:async (client, m, args ) => {
+      const player = await Player.findOne({ userId: m.sender });
+      if (!player) {
+        // If the player does not exist, create a new player with default values
+        const newPlayer = new Player({
+          userId: m.sender,
+        wallet: 100,
+        bank: 50,
+        items: [{}, {}, {}, {}, {}]
+        });
+        await newPlayer.save();
+        m.reply('Welcome to the game! You have been given 100 gold to start.');
+        return;
+      }
+    
+      // If the player exists, continue with the buying process
+      const itemNumber = parseInt(`${q}`);
+      //let item = items.find(item => item.number == itemName || item.itemName.toLowerCase() == itemName.toLowerCase());
+      const item = items.find(item => item.number === itemNumber);
+      if (!item) {
+        m.reply('Invalid item number. Please try again.');
+        return;
+      }
+
+      if (player.items.some((pItem) => pItem.itemName === item.itemName)) {
+        m.reply('You have already bought this item.');
+        return;
+      }
+      
+      if (player.wallet < item.price) {
+        m.reply('You do not have enough gold to buy this item.');
+        return;
+      }
+
+      if (item.itemName.includes('Protection')) {
+        const protection = item.itemName.split('-')[1];
+        player.protected = protection;
+  
+        setTimeout(() => {
+          player.protected = 'none';
+          player.save();
+          m.reply(`Your protection has ended after 24 hours.`);
+        }, 24 * 60 * 60 * 1000);
+      }
+
+
+      player.wallet -= item.price;
+      player.items.push(item);
+      await player.save();
+      m.reply(`You have successfully bought ${item.itemName}.`);
+    }
+    
+  }*/
+
+  const Economy = require("../../../models/economic")
+  const shopItems = require("../../../models/shop")
+  const inventory = require("../../../models/inventory")
+module.exports = {
+  name: 'buy',
+  alias: ['purchase'],
+  description: 'Buy an item from the shop.',
+  usage: `buy <item number>`,
+  category: "Economy",
+  start: async (client, m, { prefix, args }) => {
+    const userId = m.sender;
+    const itemNumber = parseInt(`1`);
+    
+    const economyData = await Economy.findOne({ userId: userId });
+    if (!economyData) {
+      return m.reply('You do not have an economy account yet.');
+    }
+
+    const item = shopItems.find(item => item.number === itemNumber);
+    if (!item) {
+      return m.reply('That item does not exist.');
+    }
+
+    const bought = await inventory.buyItem(userId, item.name, item.price);
+    if (!bought) {
+      return m.reply('You do not have enough coins to buy this item.');
+    }
+
+    m.reply(`You have bought ${item.itemName} for ${item.price} coins.`);
+  },
+};
