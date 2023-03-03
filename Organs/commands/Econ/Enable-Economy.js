@@ -4,7 +4,7 @@ module.exports = {
     name: 'enableconomy',
     alias:["enableconomy"],
     usage:`${prefa}enableconomy`,
-    desc:"View your Bank balance.",
+    desc:"enable economy for a specific group (mods only)",
     category:"Economy",
     react:"💸",
       start:async(client,m,{yaOwn,prefix , pushName,tagId})=>{

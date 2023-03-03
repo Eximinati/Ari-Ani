@@ -3,7 +3,7 @@ const Group = require("../../../models/group")
 
 module.exports = {
   name: 'wallet',
-  alias:["wallet"],
+  alias:["wal"],
   usage:`${prefa}wallet`,
   desc:"View your wallet balance.",
   category:"Economy",

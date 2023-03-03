@@ -24,6 +24,9 @@ const lemo = `
 
 * [ Ari-Ani Support ] :*
 https://chat.whatsapp.com/FJEWlNpalV69H6FqCfCOKK
+
+* [ Ari-Ani Casino ] :*
+https://chat.whatsapp.com/KkmH0lLQBWu3d8YWZPtpdl
 `
   await client.sendMessage(m.from,{video:{url:rae}, gifPlayback:true, caption: `*${pushName}* have a look in your DM`},{quoted:m})
   await  client.sendMessage(m.sender,{image:{url:Arilogogg},caption:lemo},{quoted:m})  
