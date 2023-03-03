@@ -8,10 +8,10 @@ module.exports = {
   category:"Economy",
   react:"✅",
   cool:3,
-  start: async (client, m, { yaOwn, prefix, mentionByTag, pushName, args }) => {
+  start: async (client, m, { iscreator, prefix, mentionByTag, pushName, args }) => {
     // Check if user is an admin
    
-    if (!yaOwn) return m.reply('You do not have permission to reset the user\'s economy data.');
+    if (!isCreator) return m.reply('You do not have permission to reset the user\'s economy data.');
 
     // Get user ID from mention
     const userId =mentionByTag[0];
