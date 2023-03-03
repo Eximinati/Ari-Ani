@@ -1,5 +1,5 @@
 const economyJs = require('../../../models/economic')
-
+const Group = require("../../../models/group")
 module.exports = {
   name: 'reset',
   alias:["reset"],
@@ -42,6 +42,6 @@ module.exports = {
 
     await economy.save();
 
-    return m.reply(`Successfully reset ${args[1]} coins for user ${pushName}.`);
+    return m.reply(`Successfully reset ${args[1]} coins for user ${userId}.`);
   }
 }

@@ -1,4 +1,5 @@
 const economyJs = require('../../../models/economic');
+const Group = require("../../../models/group")
 
 module.exports = {
     name: 'gamble',
@@ -8,6 +9,21 @@ module.exports = {
     category: 'Economy',
     react: '🎯',
     start: async (client, m, { command, prefix, pushname, pushName, args }) => {
+
+        if (!m.from.endsWith("@g.us")) {
+            return m.reply("Please use this command in a group.");
+          }
+      
+          const groupId = m.from;
+      
+          
+            const group = await Group.findOne({ groupId });
+            if (!group || !group.enabled) {
+              return m.reply(`Economy is not enabled in this group. Type '${prefix}support' to see casino group link`);
+            }
+    
+
+
         const userId = m.sender;
         const amount = parseInt(args[0]);
 

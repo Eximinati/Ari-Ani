@@ -1,4 +1,5 @@
 const Player = require("../../../models/economic");
+const Group = require("../../../models/group")
 
 module.exports = {
   name: 'rob',
@@ -8,6 +9,19 @@ module.exports = {
   react: '🏃‍♂️',
   usage: '/rob <user>',
   start: async (client, m, mentionByTag ,args) => {
+
+    if (!m.from.endsWith("@g.us")) {
+      return m.reply("Please use this command in a group.");
+    }
+
+    const groupId = m.from;
+
+    
+      const group = await Group.findOne({ groupId });
+      if (!group || !group.enabled) {
+        return m.reply(`Economy is not enabled in this group. Type '${prefix}support' to see casino group link`);
+      }
+
     
     //   const mention= mentionByTag
     // const target = await (mention[0]) 
