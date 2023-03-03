@@ -6,6 +6,7 @@ module.exports = {
   usage:`${prefa}resetall`,
   desc:"Reset whole db",
   category:"Economy",
+  cool: 3,
   react:"💸",
     start:async(client,m,{yaOwn,prefix , pushName,tagId})=>{
     if (!m.from.endsWith("@g.us")) {

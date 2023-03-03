@@ -3,10 +3,11 @@ const Group = require("../../../models/group")
 
 module.exports = {
     name: 'rollDice',
-    alias: ['roll-dice', 'rd'],
+    alias: ['rd'],
     usage: `${prefa}gamble <number>`,
     desc: 'Gamble a certain amount of coins on a dice roll.',
     category: 'Economy',
+    cool:10,
     react: '🎲',
     start: async (client, m, { command, prefix, pushname, pushName, args }) => {
 

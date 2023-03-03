@@ -6,6 +6,7 @@ module.exports = {
   usage:`${prefa}wallet`,
   desc:"View your Bank balance.",
   category:"Economy",
+  cool:3,
   react:"💸",
     start:async(client,m,{yaOwn,prefix , pushName,tagId})=>{
 

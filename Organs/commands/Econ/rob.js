@@ -7,6 +7,7 @@ module.exports = {
   desc: 'Attempt to rob another player.',
   category: 'Economy',
   react: '🏃‍♂️',
+  cool:30,
   usage: '/rob <user>',
   start: async (client, m, mentionByTag ,args) => {
 

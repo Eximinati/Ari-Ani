@@ -7,6 +7,7 @@ module.exports = {
     usage: `${prefa}gamble <amount> <heads or tails>`,
     desc: 'Gamble a certain amount of coins on a coin flip.',
     category: 'Economy',
+    cool:30,
     react: '🌞',
     start: async (client, m, { command, prefix, pushname, pushName, args }) => {
 

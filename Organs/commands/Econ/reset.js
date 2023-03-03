@@ -7,6 +7,7 @@ module.exports = {
   desc:"Reset user's economy data.",
   category:"Economy",
   react:"✅",
+  cool:3,
   start: async (client, m, { yaOwn, prefix, mentionByTag, pushName, args }) => {
     // Check if user is an admin
    

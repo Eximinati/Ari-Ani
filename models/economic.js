@@ -41,7 +41,8 @@ const economySchema = new mongoose.Schema({
     number: { type: Number}
   }],
   lastDaily: { type: Date, default: null },
-  lastBegTime: { type: Date, default: null }
+  lastBegTime: { type: Date, default: null },
+  lastWork: { type: Date, default: null }
 });
 
 

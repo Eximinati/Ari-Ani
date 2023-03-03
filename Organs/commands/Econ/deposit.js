@@ -6,6 +6,7 @@ module.exports = {
   usage:`${prefa}deposit`,
   desc:"Deposit coins from your wallet into your bank account.",
   category:"Economy",
+  cool:30,
   react:"💳",
     start:async(client,m,{yaOwn,prefix,pushname , pushName,args})=>{
 

@@ -6,6 +6,7 @@ module.exports = {
   usage: `${prefa}give <amount> <@user>`,
   desc: 'Give a certain amount of coins to another user.',
   category:"Economy",
+  cool:10,
   react:"💸",
     start:async(client,m,{args,prefix , pushName,mentionByTag})=>{
 
