@@ -68,13 +68,8 @@
   },
   "scripts": {
     "start": "node heart.js",
-<<<<<<< HEAD
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-prebuild": "npm install"
-=======
     "heroku-prebuild": "yarn install",
     "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> cc4470b62dd2989a37e888fb7e294f295f2e5263
   },
   "author": "Aku",
   "license": "AGPL-3.0",
