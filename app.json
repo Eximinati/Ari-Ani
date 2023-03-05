@@ -1,0 +1,43 @@
+{
+    
+    "name": "Yotsuba",
+    "description": "A WhatsApp Bot With Rich NSFW Features based on chitoge.",
+    "keywords": [
+        "bot",
+        "whatsapp",
+        "stickers",
+        "whatsapp-stickers",
+        "anime",
+        "whatsapp-bot",
+        "whatsapp-sticker-bot",
+        "whatsapp-botto"
+    ],
+    "website": "https://github.com/Eximinati/Ari-Ani#readme",
+    "repository": "https://github.com//Eximinati/Ari-Ani.git",
+    "logo": "https://telegra.ph/file/75368c6fe4abb9d0f2bb9.png",
+    "success_url": "/",
+    "env": {
+        "PREFIX": {
+            "description": "Prefix of your bot"
+        },
+        "SESSION_ID": {
+            "description": "A string for the session to be classified and to get access to the server endpoints"
+        },
+        "MODS": {
+            "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
+            "required": false
+        },
+        "MONGO_URI": {
+            "description": "A secret String for Mongodb Connection.",
+            "required":false
+        },
+        "MAL_USERNAME": {
+            "description": "Your username for myanimelist.net to make anime and manga search",
+            "required": false
+        },
+        "MAL_PASSWORD": {
+            "description": "Your password for myanimelist.net to make anime and manga search",
+            "required": false
+        }
+    }
+  }
