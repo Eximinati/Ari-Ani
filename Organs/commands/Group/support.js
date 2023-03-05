@@ -23,7 +23,7 @@ const lemo = `
 
 
 * [ Ari-Ani Support ] :*
-https://chat.whatsapp.com/FJEWlNpalV69H6FqCfCOKK
+https://chat.whatsapp.com/DZqkUYiWJj306q4n3ePHFc
 
 * [ Ari-Ani Casino ] :*
 https://chat.whatsapp.com/KkmH0lLQBWu3d8YWZPtpdl
