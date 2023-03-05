@@ -1,16 +1,5 @@
-FROM fedora:37
-
-RUN sudo dnf -y update &&\
-    sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm &&\
-    sudo dnf install -y git ffmpeg ImageMagick nodejs yarnpkg libwebp &&\
-    sudo dnf clean all -y
-
-RUN sudo npm install forever -g
-
-WORKDIR /Ari-Ani
-
-COPY . /Ari-Ani
-
-RUN yarn
-
-CMD ["node", "koyeb.js"]
+FROM quay.io/lyfe00011/md:beta
+RUN git clone https://github.com/Eximinati/Ari-bot-Ani.git /root/Ari-Ani/
+WORKDIR /root/Ari-Ani/
+RUN yarn install --network-concurrency 1
+CMD ["node", "heart.js"]
