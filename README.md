@@ -115,7 +115,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🧑‍💻 Development Team
 
-      # Creatprs
+      # Creators
 
 | <a href="https://github.com/Eximinati"><img src="https://github.com/Eximinati.png?size=100" width="100" height="100"></a> | [![pratyush](https://github.com/pratyush4932.png?size=100)](https://github.com/RaySenpai69) |
 | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
