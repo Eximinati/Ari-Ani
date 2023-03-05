@@ -114,11 +114,10 @@ MODS=923087880xxx
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🧑‍💻 Development Team
-<a href="https://github.com/pratyush4932"><img src="https://github.com/pratyush4932.png?size=100" width="100" height="100"></a>
 
-[Pratyush](https://github.com/pratyush4932)
+      # Modifiers
 
-<a href="https://github.com/Eximinati"><img src="https://github.com/Eximinati.png?size=100" width="100" height="100"></a>
+| <a href="https://github.com/Eximinati"><img src="https://github.com/Eximinati.png?size=100" width="100" height="100"></a> | [![Ray_Senpai](https://github.com/RaySenpai69.png?size=100)](https://github.com/RaySenpai69) |
+| ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| [Aku](https://github.com/Eximinati)                                                                                       | [Ray_Senpai](https://github.com/RaySenpai69)                                                 |
 
-[Eximinati](https://github.com/Eximinati)
-| Creator |
