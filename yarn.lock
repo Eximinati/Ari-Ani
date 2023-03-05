@@ -46,13 +46,6 @@
   resolved "https://registry.yarnpkg.com/@canvas-fonts/arial-bold/-/arial-bold-1.0.4.tgz#48a43756b620582ff8be43e183ea7dd39fd6f541"
   integrity sha512-lEL4fQ6910FsfCUmC4K+EZbc+ldzf6YV7buxIVOx7wQ2MNQvCCsMCFYdMxbFGMlBhg3i8A37i2HY/dkuG6+4VQ==
 
-"@hapi/boom@^10.0.1":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@hapi/boom/-/boom-10.0.1.tgz#ebb14688275ae150aa6af788dbe482e6a6062685"
-  integrity sha512-ERcCZaEjdH3OgSJlyjVk8pHIFeus91CjKP3v+MpgBNp5IvGzP2l/bRiD78nqYcKPaZdbKkK5vDBVPd2ohHBlsA==
-  dependencies:
-    "@hapi/hoek" "^11.0.2"
-
 "@hapi/boom@^9.1.3":
   version "9.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/boom/-/boom-9.1.4.tgz#1f9dad367c6a7da9f8def24b4a986fc5a7bd9db6"
@@ -64,11 +57,6 @@
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.3.0.tgz#8368869dcb735be2e7f5cb7647de78e167a251fb"
   integrity sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==
-
-"@hapi/hoek@^11.0.2":
-  version "11.0.2"
-  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-11.0.2.tgz#cb3ea547daac7de5c9cf1d960c3f35c34f065427"
-  integrity sha512-aKmlCO57XFZ26wso4rJsW4oTUnrgTFw2jh3io7CAtO9w4UltBNwRXvXIVzzyfkaaLRo3nluP/19msA8vDUUuKw==
 
 "@jimp/bmp@^0.16.13":
   version "0.16.13"
