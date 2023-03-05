@@ -15,6 +15,30 @@
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
   ],
+  "env": {
+    "PREFIX": {
+        "description": "Prefix of your bot"
+    },
+    "SESSION_ID": {
+        "description": "A string for the session to be classified and to get access to the server endpoints"
+    },
+    "MODS": {
+        "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
+        "required": false
+    },
+    "MONGO_URI": {
+        "description": "A secret String for Mongodb Connection.(Required)",
+        "required": false
+    },
+    "MAL_USERNAME": {
+        "description": "Your username for myanimelist.net to make anime and manga search",
+        "required": false
+    },
+    "MAL_PASSWORD": {
+        "description": "Your password for myanimelist.net to make anime and manga search",
+        "required": false
+    }
+},
    "formation": {
         "worker": {
             "quantity": 1,

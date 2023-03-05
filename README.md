@@ -103,7 +103,11 @@ MODS=923087880xxx
 <a href="https://railway.app/new/template/cusVAZ?referralCode=iTIHSx"><img src="https://railway.app/button.svg" width="200" height="50"></a>
       <br><br>
 <a href="https://repl.it/github/Eximinati/Ari-Ani"><img src="https://i.ibb.co/zrB5kMh/deploy-on-repl.jpg" width="200" height="50"></a>
-      
+
+<br><br>
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Eximinati/Ari-Ani)
+
 ## 🤝 Contributing
 
 + Feel free to open issues regarding any problems or if you have any feature requests.
