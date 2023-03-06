@@ -5,12 +5,12 @@ RUN sudo dnf -y update &&\
     sudo dnf install -y git ffmpeg ImageMagick nodejs yarnpkg libwebp &&\
     sudo dnf clean all -y
 
-RUN sudo npm install forever -g
+RUN sudo yarn install forever -g
 
 WORKDIR /Ari-Ani
 
 COPY . /Ari-Ani
 
-RUN npm
+RUN yarn
 
 CMD ["node", "koyeb.js"]
