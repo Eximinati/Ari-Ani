@@ -69,7 +69,7 @@
   },
   "scripts": {
     "start": "node heart.js",
-    "heroku-prebuild": "yarn install",
+    "heroku-prebuild": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aku",
