@@ -28,7 +28,7 @@ module.exports = {
     const earnedCoins = Math.floor(Math.random() * (maxCoins - minCoins + 1)) + minCoins;
 
     const economy = await economyJs.findOne({ userId: m.sender });
-    if (!economy) return message.channel.send('You don\'t have an economy profile.');
+    if (!economy) return m.reply('You don\'t have an economy profile.');
 
     economy.wallet += earnedCoins;
     await economy.save();
