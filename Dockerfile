@@ -11,6 +11,6 @@ WORKDIR /Ari-Ani
 
 COPY . /Ari-Ani
 
-RUN yarn
+RUN npm
 
 CMD ["node", "koyeb.js"]
