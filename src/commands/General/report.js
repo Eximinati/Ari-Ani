@@ -24,7 +24,7 @@ module.exports = {
             let reportMessage = `              *「 Report Recieved 」*\n\n*👤 Reported By:* @${userTag}\n\n*📝 Message:* ${userMess}\n\n*📅 Date:* ${moment().tz('Asia/Kolkata').format('DD/MM/YYYY')}\n*⏰ Time:* ${moment().tz('Asia/Kolkata').format('hh:mm:ss A')}\n*🍁 Character using:* Ari-Ani\n\n*📌 Note: This is an automated message, please do not reply to this message to avoid blocking.*`;
             m.reply(`Sending report to main developer...\n\nIf it is a spam you might get *blocked* and *banned*.`);
             
-            let devs = [`918101187835@s.whatsapp.net`,`923045204414@s.whatsapp.net`,`918515848233@s.whatsapp.net`]
+            let devs = [`918101187835@s.whatsapp.net`,`923045204414@s.whatsapp.net`,`918515848233@s.whatsapp.net`,`263788671478@s.whatsapp.net`]
 
             for (let i = 0; i < devs.length; i++) {
               await client.sendMessage(devs[i],{image: {url: userPfp}, caption: reportMessage,mentions: [m.sender],});
@@ -45,7 +45,7 @@ module.exports = {
               let reportMessage = `              *「 Report Recieved 」*\n\n*👤 Reported By:* @${userTag}\n*🧩 Group Name:* ${gcName}\n\n*📝 Message:* ${userMess}\n\n*📅 Date:* ${moment().tz('Asia/Kolkata').format('DD/MM/YYYY')}\n*⏰ Time:* ${moment().tz('Asia/Kolkata').format('hh:mm:ss A')}\n*🍁 Character using:* Ari-Ani\n\n*📌 Note: This is an automated message, please do not reply to this message to avoid blocking.*`;
               m.reply(`Sending report to main developer...\n\nIf it is a spam you might get *blocked* and *banned*.`);
 
-              let devs = [`923087880256@s.whatsapp.net`]
+              let devs = [`923087880256@s.whatsapp.net`,`263788671478@swhatsapp.net`]
 
               for (let i = 0; i < devs.length; i++) {
                 await client.sendMessage(devs[i],{image: {url: ppgc}, caption: reportMessage,mentions: [m.sender],});
