@@ -18,7 +18,7 @@ module.exports = {
   let ay = wlc.includes(`${m.from}`) || "false"
   let ns=nsfw.includes(`${m.from}`) || "false"
 const code = await client.groupInviteCode(m.from)
-let ingfo = `*━━━━『🍀Group-Info🍀』━━━━*\n\n*🎐Name:* ${groupName}\n\n*🔩ID Group:* ${m.from}\n\n*🍀Made:* ${moment(`${metadata.creation}` * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n\n*🥇Group Owner:* @${metadata.owner.split('@')[0]}\n\n*🔍Number Of Admins:* ${groupAdmin.length}\n\n*🎍Number Of Participants:* ${participants.length}\n\n*🔍Desc:* \n\n${metadata.desc}\n\n*🟥Antilink:* ${acy}\n*🟨Events:* ${ay}\n*🍒NSFW*: ${ns}`
+let ingfo = `*━━━━『🍀Group-Info🍀』━━━━*\n\n*🎐Name:* ${groupName}\n\n*🆔️ID Group:* ${m.from}\n\n*🎋Made:* ${moment(`${metadata.creation}` * 1000).tz('Africa/Blantyre').format('DD/MM/YYYY HH:mm:ss')}\n\n*🥇Group Owner:* @${metadata.owner.split('@')[0]}\n\n*👑Number Of Admins:* ${groupAdmin.length}\n\n*🧧Number Of Participants:* ${participants.length}\n\n*🎗Desc:* \n\n${metadata.desc}\n\n*🟥Antilink:* ${acy}\n*🟨Events:* ${ay}\n*🍒NSFW*: ${ns}`
 //m.reply(ingfo)
 client.sendMessage(m.from, { image: {url:ppuser},caption:ingfo, mentions: [metadata.owner]} , { quoted: m})
     }
