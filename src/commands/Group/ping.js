@@ -20,9 +20,9 @@ module.exports = {
         const members= []
         if(flags.includes('--h')){
             const message = text ?text : m.quoted ? m.quoted.msg : ''
-            let  menText = `${message !== '' ? `🧧 *Message:* ${message}\n\n` : ''}🍀 *Group:* ${
+            let  menText = `${message !== '' ? `✉ *Message:* ${message}\n\n` : ''}〽️ *Group:* ${
               groupName
-            }\n👥 *Members:* ${participants.length}\n📣 *Tagger: @${
+            }\n👥 *Members:* ${participants.length}\n👑 *Tagger: @${
                 m.sender.split('@')[0]
             }*
             `
