@@ -13,7 +13,7 @@ module.exports = {
         if (!m.from.endsWith("@g.us")) {
             return m.reply("Please use this command in a group.");
           }
-        let response = `💰 Economy Leaderboard 💰\n`;
+        let response = `💵 Economy Leaderboard 💵\n`;
         for (let i = 0; i < topUsers.length; i++) {
             const user = topUsers[i];
             const name = user.userId;
