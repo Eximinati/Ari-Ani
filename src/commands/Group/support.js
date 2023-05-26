@@ -21,10 +21,10 @@ const lemo = `
 
 
 
-* [ Ari-Ani Support ] :*
+* [ Galaxia Support ] :*
 https://chat.whatsapp.com/DZqkUYiWJj306q4n3ePHFc
 
-* [ Ari-Ani Casino ] :*
+* [ Galaxia Casino ] :*
 https://chat.whatsapp.com/KkmH0lLQBWu3d8YWZPtpdl
 `
   await client.sendMessage(m.from,{video:{url:rae}, gifPlayback:true, caption: `*${pushName}* have a look in your DM`},{quoted:m})
