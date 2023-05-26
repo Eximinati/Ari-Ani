@@ -26,7 +26,7 @@ module.exports = {
 ]
 const listMessage = {
   text: "Choose the required setting",
-  footer: "Ari-Ani",
+  footer: "GalaxiaInc",
   title: "",
   buttonText: "settings",
   sections
