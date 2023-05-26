@@ -27,7 +27,7 @@ module.exports={
     m.reply(`*Broadcasting message to ${anu.length} groups...*`);
     
     for (let i of anu) {
-      let txt = `*「  🧣 Ari-Ani Broadcast 🧣  」*\n\n*🧩 Message:* ${broadcastText}\n\n\n*🔰 Regards ~ ${pushName}*`;
+      let txt = `*「  ✨ Galaxia Broadcast 🚀  」*\n\n*✉ Message:* ${broadcastText}\n\n\n*👑 Regards ~ ${pushName}*`;
 
       client.sendMessage(i, {
         video: { url: "https://telegra.ph/file/672375c8205e1f126f200.mp4"},
