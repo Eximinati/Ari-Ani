@@ -23,9 +23,9 @@ module.exports = {
     const bank = economy.bank.toLocaleString();
 
     let walText = 
-    `\n*❁財⍩Ari-Ani 𝔹𝕒𝕟𝕜 - 💴*
-    \n👤Name: ${pushName}
-    \n🏷️Tag: ${tag}
+    `\n*❁財⍩ Galaxia 𝔹𝕒𝕟𝕜 - 💴*
+    \n〽️Name: ${pushName}
+    \n🆔️Tag: ${tag}
     \n💳Bank: ${bank}`
     
     await client.sendMessage(m.from , {text: walText} , {quoted:m})
