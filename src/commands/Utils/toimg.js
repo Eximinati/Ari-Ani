@@ -9,7 +9,6 @@ module.exports={
     desc:"Converts a sticker to image/gif",
     category:"Utils",
     cool:5,
-    react:"✅",
 
     start:async(client,m,{text,quoted,mime,})=>{
         if(m.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.isAnimated !== true) {
@@ -22,7 +21,7 @@ module.exports={
       fs.unlinkSync(media)
       if (err) m.reply(err)
       let buffer = fs.readFileSync(ran)
-      client.sendMessage(m.from, { image: buffer,caption:'Ari-Ani™' }, { quoted: m })
+      client.sendMessage(m.from, { image: buffer,caption:'Galaxia™' }, { quoted: m })
       fs.unlinkSync(ran)
   })
 } else if (m.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.isAnimated == true){
@@ -31,7 +30,7 @@ module.exports={
   
   let media = await client.downloadAndSaveMediaMessage(quoted)
   let webpToMp4 = await webp2mp4File(media)
-  await client.sendMessage(m.from, { video: { url: webpToMp4.result, caption: 'Ari-Ani™' }, gifPlayback: true }, { quoted: m })
+  await client.sendMessage(m.from, { video: { url: webpToMp4.result, caption: 'Galaxia™' }, gifPlayback: true }, { quoted: m })
   await fs.unlinkSync(media)
 }
 
