@@ -77,7 +77,7 @@ const connect = async () => {
   let { version, isLatest } = await fetchLatestBaileysVersion();
   let connOptions = {
     printQRInTerminal: true,
-    browser: ["Ari-Ani", "Firefox", "105.0.1343.42"],
+    browser: ["Galaxia", "Firefox", "105.0.1343.42"],
     logger: pino({ level: "silent" }),
     defautQueryTimeoutMs: undefined,
     auth: state,
@@ -94,7 +94,7 @@ const connect = async () => {
     .toString(16)
     .padStart(6, "0")}`;
 
-  await cfonts.say("Ari-Ani\n\nBY\n\nHumans", {
+  await cfonts.say("Galaxia\n\nBY\n\nHumans", {
     font: "block", // define the font face
     align: "center", // define text alignment
     colors: [randomHex, randomHexs], // define all colors
