@@ -17,7 +17,7 @@ module.exports = {
             'https://images8.alphacoders.com/120/1206602.png'
           ]
           
-          let ariAni = await axios.get('https://api.github.com/repos/Eximinati/Ari-Ani')
+          let ariAni = await axios.get('https://api.github.com/repos/YujiMODS/Ari-Ani')
 let random = images[Math.floor(Math.random() * images.length)]
 
 var caption = 
