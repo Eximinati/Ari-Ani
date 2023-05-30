@@ -1,126 +1,111 @@
-body {
-  margin: 0px;
-  height: 100%;
-}
-
-#bgimg {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://i0.wp.com/www.animephproject.com/wp-content/uploads/2019/06/Arifureta-on-Aniplus-Asia.jpg?fit=851%2C503&ssl=1");
-  background-repeat: no-repeat;
-  background-position: center;
+/* Default styles */
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
   background-size: cover;
-  overflow: hidden;
-  bottom: 0;
-  left: 0;
-  top: 0;
-}
-header {
-  background-color: #ffffff40;
-  backdrop-filter: blur(8px);
-  box-shadow: 0px 10px 15px #00000050;
-  height: 160px;
-  text-align: center;
-}
-header span {
-  display: block;
-  font-size: 60px;
-  font-family: "Kanit", sans-serif;
-  font-weight: 300;
-  padding-top: 35px;
-}
-header span::after {
-  font-size: 60px;
-  content: "NITY";
-  color: #db1a1a;
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
 }
 
-/* MAIN */
+body {
+  margin: 0;
+  padding: 0;
+}
 
-main #body {
-  background-color: #ffffff40;
-  backdrop-filter: blur(8px);
-  box-shadow: 0px 10px 15px #00000060, 0px -5px 15px #00000050;
-  font-family: "Kanit", sans-serif;
-  width: max-content;
-  width: 40%;
-  margin: auto;
-  margin-top: 150px;
-  border-radius: 15px;
-}
-main #bodyflex {
+form {
   display: flex;
-  flex-direction: column;
-}
-#wlcm {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: #f10909;
-  font-weight: 600;
-}
-#t1 {
-  padding: 2% 0px;
-  color: #d31010e1;
-  font-size: 40px;
-}
-#t2 {
-  padding: 2% 0px;
-  font-size: 25px;
-}
-#formflex {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
   align-items: center;
-  background-color: #e422227a;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  border-radius: 12px;
+  justify-self: center;
+  flex-direction: column;
 }
-#session {
-  width: 80%;
-  height: 30px;
-  margin-top: 5%;
-  margin-left: 8%;
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  margin-bottom: 5%;
+
+form > input {
+  padding: 10px;
   border: none;
-  outline: none;
-  padding-left: 3%;
-  border-radius: 8px;
-}
-button {
-  margin-bottom: 5%;
-  margin-left: 35%;
-  font-size: 130%;
-  font-family: "Kanit", sans-serif;
-  color: #eb1111;
-  font-weight: 600;
-  width: min-content;
-  height: 40px;
-  border: none;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 3px;
+  background: rgba( 255, 255, 255, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
   border-radius: 10px;
+  border: 1px none rgba( 255, 255, 255, 0.18 );
 }
-@media screen and (max-width: 500px) {
-  header {
-    height: 100px;
-  }
-  header span {
-    font-size: 40px;
-    padding-top: 20px;
-  }
-  header span::after {
-    font-size: 40px;
-  }
-  main #body {
-    width: 90%;
-  }
+
+button {
+  color: aliceblue;
+  padding: 13px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  background:  rgba( 246, 197, 92, 0.45 );;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 17px );
+  -webkit-backdrop-filter: blur( 17px );
+  border-radius: 10px;
+  border: 1px none rgba( 255, 255, 255, 0.18 );
 }
+
+.greets {
+  background-color: #f6c55c;
+  height: inherit;
+  width: inherit;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  background: rgba( 246, 197, 92, 0.45 );
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.outer-form {
+  height: 480px;
+  width: 550px;
+  display: flex;
+  flex-direction: row;
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 0 32px 0 rgba(2, 2, 2, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.form {
+  display: flex;   
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+
+section {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  font-family: 'Ubuntu','Courier New', Courier, monospace;
+  font-weight: 400;
+}
+h1 {
+  font-family: 'Ubuntu','Courier New', Courier, monospace;
+  font-weight: 700;
+  text-align: center;
+}
+@media screen and (max-width:524px) {
+     h1 {
+         font-size: x-large;
+     }
+     .outer-form {
+      height: 300px;
+      width: 450px;
+     }
+  }

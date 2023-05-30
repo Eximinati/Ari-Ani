@@ -11,7 +11,7 @@ module.exports={
     start:async(client,m,{yaOwn})=>{
         const mod= yaOwn
         let mods=`
-        *🎉 Ari-Ani Mods 🎉*\n`
+        *🎉  Mods  🎉*\n`
         for(let i=0;i<mod.length;i++){
 
             const um= await client.username(mod[i])

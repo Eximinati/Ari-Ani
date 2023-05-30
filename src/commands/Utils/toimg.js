@@ -1,4 +1,4 @@
-let { webp2mp4File,getRandom } = require('../../../lib/Function')
+let { webp2mp4File,getRandom } = require('../../lib/Function')
 const fs=require('fs')
 const { exec } = require("child_process")
 require ('../../../settings')

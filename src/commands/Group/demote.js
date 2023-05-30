@@ -1,7 +1,6 @@
-require('../../handler/MessageHandler')
 module.exports = {
 	name: "demote",
-	alias: ["dm"],
+	alias: ["dmote"],
 	desc: "Demote Admin To Member",
 	usage: `${prefa}demote`,
 	react:"✅",

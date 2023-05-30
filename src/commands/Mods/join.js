@@ -1,5 +1,4 @@
-require('../../handler/MessageHandler')
-const {isUrl}=require("../../../lib/Function")
+const {isUrl}=require("../../lib/Function")
 module.exports = {
     name: "join",
     alias: ["jn"],

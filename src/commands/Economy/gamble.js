@@ -2,7 +2,7 @@ const economyJs = require('../../models/economic');
 
 module.exports = {
     name: 'gamble',
-    alias: ['gamble'],
+    alias: ['Gamble'],
     usage: `${prefa}gamble <amount>`,
     desc: 'Gamble a certain amount of coins.',
     category: 'Economy',

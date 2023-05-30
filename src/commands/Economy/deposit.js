@@ -1,7 +1,7 @@
 const economyJs = require('../../models/economic')
 module.exports = {
   name: 'deposit',
-  alias:["deposit"],
+  alias:["Deposit"],
   usage:`${prefa}deposit`,
   desc:"Deposit coins from your wallet into your bank account.",
   category:"Economy",

@@ -1,8 +1,6 @@
-require("../../handler/MessageHandler");
-
 module.exports = {
   name: "enable",
-  alias: ["act", "register"],
+  alias: ["act", "register" , "activate"],
   desc: "enables the commands",
   cool: 3,
   usage: `${prefa}enable [command]`,

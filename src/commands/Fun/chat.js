@@ -2,10 +2,10 @@ const axios = require('axios')
 require ('../../../settings')
 module.exports = {
     name: "chat",
-    alias: ["Chat"],
+    alias: ['botchat'],
     desc: "Gives you random advices for your broken life.",
     usage:`${prefa}advice`,
-    category: "Education",
+    category: "Fun",
     react:"📛",
 
     start: async(client, m,{ text, quoted, args }) => {

@@ -1,43 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ari-Ani™</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap"
-      rel="stylesheet" />
-  </head>
-
-  <body>
-    <div id="bgimg"></div>
-    <header><span>ETER</span></header>
-    <main>
-      <div id="body">
-        <div id="bodyflex">
-          <div id="wlcm">
-            <div id="t1">Welcome,</div>
-            <div id="t2">Please verify yourself.</div>
-          </div>
-          <div>
-            <div id="formflex">
-              <form action="/qr" method="get" target="_blank">
-                <input
-                  type="text"
-                  placeholder="Enter your SESSION ID"
-                  id="session"
-                  name="session" />
-                <button>Submit</button>
-              </form>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <title>WhatsApp-bot</title>    
+</head>
+<body>
+<section class="main-container">
+    <div class="outer-form">   
+        <div class="greets content">
+            <div>
+                <h1 id="greeting"></h1>
+                <p>Please Enter Your Session ID to Authenticate</p>
             </div>
-          </div>
         </div>
-      </div>
-    </main>
-  </body>
+
+        <video controls autoplay loop muted id="video-element">
+            <source id="video-source" type="video/mp4">
+        </video>
+        <button onclick="toggleMute()">Sound On/Off</button>
+        <div class="form">
+            <form action="/qr" method="get" target="_blank">
+                <h1>Authenticate</h1>
+                <input type="password" placeholder="Session" id="session" name="session"/>
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>        
+
+//greetings
+const now = new Date();
+    const hour = now.getHours();
+
+    let greeting;
+
+    if (hour < 12) {
+      greeting = "Ohayo";
+    } else if (hour >= 12 && hour < 18) {
+      greeting = "Konnichiwa";
+    } else {
+      greeting = "Konbanwa";
+    }
+
+    document.getElementById("greeting").textContent = greeting + " User Kun";
+
+    //ends
+    var videoSources = [
+        'https://telegra.ph/file/b7ff7c7ffc559e49bd4b7.mp4',
+        'https://telegra.ph/file/7f64e048154bd6b158b95.mp4',
+        'https://telegra.ph/file/919f2056a138d4ddd9f70.mp4',
+        'https://telegra.ph/file/9e33d7c433d1bb569908d.mp',
+        'https://telegra.ph/file/949ba5067c3323fd8d91a.mp4',
+        'https://telegra.ph/file/7755725d8f740359345d9.mp4',
+        'https://telegra.ph/file/f0654b01bd0061ac7c9ad.mp4'
+        // 'https://telegra.ph',
+        // 'https://telegra.ph',
+    ];
+
+    var randomIndex = Math.floor(Math.random() * videoSources.length);
+    var randomSource = videoSources[randomIndex];
+    var videoElement = document.getElementById('video-element');
+    videoElement.setAttribute('src', randomSource);
+
+    // var myVideo = document.getElementById("video-element");
+
+    function toggleMute() {
+        if (videoElement.muted) {
+            videoElement.muted = false;
+        } else {
+            videoElement.muted = true;
+        }
+    }
+</script>
+
+<script>
+    
+</script>
+</body>
 </html>

@@ -1,6 +1,6 @@
 module.exports = {
 	name: "support",
-	alias: ["sup"],
+	alias: ["support-group"],
 	desc: "Send you official support group link.",
   usage: `${prefa}support`,
 	category: "Group",
@@ -13,7 +13,7 @@ module.exports = {
 let rae = yup[Math.floor(Math.random() * yup.length)]
 
   
-const Arilogogg = "https://i.ibb.co/kcz5R14/Whats-App-Image-2023-02-27-at-12-32-54-AM.jpg"
+const Arilogogg = "https://images.app.goo.gl/8kz77zKAZYeV19dL9"
         
                          
 const lemo = `
@@ -21,11 +21,13 @@ const lemo = `
 
 
 
-* [ Ari-Ani Support ] :*
-https://chat.whatsapp.com/DZqkUYiWJj306q4n3ePHFc
+* [ ${process.env.NAME} 's Support ] :*
 
-* [ Ari-Ani Casino ] :*
-https://chat.whatsapp.com/KkmH0lLQBWu3d8YWZPtpdl
+Link to be posted Soon.
+
+* [ ${process.env.NAME} 's Casino ] :*
+
+Link to be posted Soon.
 `
   await client.sendMessage(m.from,{video:{url:rae}, gifPlayback:true, caption: `*${pushName}* have a look in your DM`},{quoted:m})
   await  client.sendMessage(m.sender,{image:{url:Arilogogg},caption:lemo},{quoted:m})  

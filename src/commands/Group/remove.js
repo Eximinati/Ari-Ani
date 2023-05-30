@@ -1,7 +1,7 @@
 require ('../../../settings')
 module.exports = {
 	name: "remove",
-	alias: ["remove","boom"],
+	alias: ["boom"],
 	usage:`${prefa}remove @tag/quote`,
 	desc: "remove Member from group",
 	category: "Group",

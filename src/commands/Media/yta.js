@@ -1,5 +1,5 @@
-const YT = require('../../../lib/ytdl')
-const { isUrl, fetchBuffer } = require('../../../lib/Function')
+const YT = require('../../lib/ytdl')
+const { isUrl, fetchBuffer } = require('../../lib/Function')
 const fs=require("fs")
 require ('../../../settings')
 module.exports={

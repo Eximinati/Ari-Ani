@@ -5,7 +5,7 @@ const chalk = require("chalk")
 const FileType = require("file-type")
 const moment = require("moment-timezone")
 const path = require("path")
-const { getRandom, fetchBuffer } = require("../../lib/Function")
+const { getRandom, fetchBuffer } = require("../lib/Function")
 
 class WAConnection {
     constructor(conn) {

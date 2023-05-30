@@ -2,7 +2,7 @@ const economyJs = require('../../models/economic')
 
 module.exports = {
   name: 'withdraw',
-  alias:["withdraw"],
+  alias:["withdrew"],
   usage:`${prefa}withdraw`,
   desc:"withdraw moeny from bank.",
   category:"Economy",

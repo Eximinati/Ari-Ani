@@ -1,7 +1,7 @@
 require ('../../../settings')
 module.exports = {
 	name: "add",
-	alias: ["Add"],
+	alias: ["addmember"],
 	usage:`${prefa}add num`,
 	desc: "dd Member to group",
 	category: "Group",

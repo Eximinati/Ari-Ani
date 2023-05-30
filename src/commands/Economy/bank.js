@@ -1,7 +1,7 @@
 const economyJs = require('../../models/economic')
 module.exports = {
   name: 'bank',
-  alias:["bank"],
+  alias:["Bank"],
   usage:`${prefa}wallet`,
   desc:"View your Bank balance.",
   category:"Economy",
@@ -23,7 +23,7 @@ module.exports = {
     const bank = economy.bank.toLocaleString();
 
     let walText = 
-    `\n*❁財⍩Ari-Ani 𝔹𝕒𝕟𝕜 - 💴*
+    `\n*❁財⍩Your Bank Details - 💴*
     \n👤Name: ${pushName}
     \n🏷️Tag: ${tag}
     \n💳Bank: ${bank}`

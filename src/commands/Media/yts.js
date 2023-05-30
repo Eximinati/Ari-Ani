@@ -1,4 +1,4 @@
-const { isUrl, fetchBuffer } = require('../../../lib/Function')
+const { isUrl, fetchBuffer } = require('../../lib/Function')
 const fs=require("fs")
 const yts= require("youtube-yts")
 require ('../../../settings')

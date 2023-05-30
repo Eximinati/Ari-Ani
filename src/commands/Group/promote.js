@@ -1,7 +1,7 @@
 require ('../../../settings')
 module.exports = {
 	name: "promote",
-	alias: ["pm"],
+	alias: ["pmote"],
 	usage:`${prefa}promote @tag/quote`,
 	desc: "Promote Member To Admin",
 	react:"✅",

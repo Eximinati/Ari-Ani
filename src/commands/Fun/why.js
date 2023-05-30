@@ -5,7 +5,7 @@ module.exports = {
     alias: ["Why"],
     desc: "Gives you random whys.",
     usage:`${prefa}why`,
-    category: "Education",
+    category: "Fun",
     react:"📛",
 
     start: async(client, m,{ text, quoted, args }) => {

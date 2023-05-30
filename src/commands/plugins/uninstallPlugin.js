@@ -2,7 +2,7 @@ let fs = require("fs");
 const path = require("path");
 const axios = require("axios");
 const commandsIns = require('../../../installed.json');
-const {restart} = require('../../../lib/Function')
+const {restart} = require('../../lib/Function')
 module.exports = {
     name:"uninstall",
     alias:["unistal"],

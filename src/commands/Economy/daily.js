@@ -3,7 +3,7 @@ const moment = require('moment-timezone');
 
 module.exports = {
   name: 'daily',
-  alias: ['daily'],
+  alias: ['Daily'],
   usage: `${prefa}daily`,
   desc: 'Claim your daily coins.',
   category: 'Economy',
@@ -22,7 +22,7 @@ module.exports = {
 
   const lastDaily = economy.lastDaily;
   const now = moment.tz('Asia/Tehran');
-  economy.wallet += 100;
+  economy.wallet += 500;
   economy.lastDaily = now;
   await economy.save();
 
@@ -36,10 +36,10 @@ module.exports = {
     }
 
     if (!buttonText) {
-      economy.wallet += 100;
+      economy.wallet += 500;
       economy.lastDaily = now;
       await economy.save();
-      buttonText = `You claimed your daily 100 coins! | ${pushName}`;
+      buttonText = `You claimed your daily 500 coins! | ${pushName}`;
     }
   await client.sendMessage(m.from, {text: buttonText}, { quoted: m });
 }

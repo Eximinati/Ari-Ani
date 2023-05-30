@@ -1,6 +1,6 @@
 module.exports={
     name:"unban",
-    alias:["unban"],
+    alias:["unbanuser"],
     usage:"=unban @user",
     desc:"unbans users from using commands",
     category:"Mods",

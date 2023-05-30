@@ -1,11 +1,10 @@
-require('../../handler/MessageHandler')
 const canvacord = require('canvacord')
 const {
     fetchBuffer
-} = require('../../../lib/Function')
+} = require('../../lib/Function')
 module.exports = {
     name: "rank",
-    alias: ["rank"],
+    alias: ["r"],
     desc: "shows the rank",
     cool: 3,
     react: "✅",

@@ -2,7 +2,7 @@ require ('../../../settings')
 const {evaluate} = require('mathjs')
 module.exports={
     name:"calculator",
-    alias:["cal" , "calc"],
+    alias:['cal' , 'calc'],
     usage:`${prefa}cal [Your string]`,
     desc:"Gives you the simple calculator ",
     category:"Education",

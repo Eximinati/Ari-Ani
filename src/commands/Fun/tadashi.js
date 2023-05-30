@@ -5,7 +5,7 @@ module.exports = {
     alias: ["tadashi"],
     desc: "Chat with bot.",
     usage:`${prefa}chat`,
-    category: "Education",
+    category: "Fun",
     react:"📛",
 
     start: async(client, m,{ text, args }) => {

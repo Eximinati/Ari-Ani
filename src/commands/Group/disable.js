@@ -1,7 +1,6 @@
-require('../../handler/MessageHandler')
 module.exports = {
     name: "disable",
-    alias: ["deact","unregister"],
+    alias: ["deact","unregister" , "deactivate"],
     desc: "disables the commands",
     usage: `${prefa}disable {command}`,
     cool:3,

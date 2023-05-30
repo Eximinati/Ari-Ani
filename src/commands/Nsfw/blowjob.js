@@ -1,4 +1,4 @@
-const { buffergif, fetchBuffer } = require('../../../lib/Function')
+const { buffergif, fetchBuffer } = require('../../lib/Function')
 const axios = require('axios')
 require ('../../../settings')
 module.exports={

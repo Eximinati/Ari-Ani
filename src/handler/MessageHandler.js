@@ -5,10 +5,10 @@ const {
   areJidsSameUser,
   proto,
 } = require("@adiwajshing/baileys");
-const { Function } = require("../../lib");
+const { Function } = require("../lib");
 const { Collection, Simple } = require("../typings");
 const { isUrl, isNumber } = Function;
-const Func = require("../../lib");
+const Func = require("../lib");
 const fs = require("fs");
 const moment = require("moment-timezone");
 const chalk = require("chalk");

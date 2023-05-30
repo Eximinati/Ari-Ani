@@ -1,6 +1,6 @@
 module.exports = {
     name: "birthday",
-    alias: ["happybirthday","happyBirthday", "hbd"],
+    alias: ['happybirthday','happyBirthday', 'hbd'],
     desc: "List all command",
     usage: `${prefa}birthday [mention/quote]`,
     category: "Fun",

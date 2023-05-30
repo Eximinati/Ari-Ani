@@ -1,7 +1,7 @@
 const economyJs = require('../../models/economic')
 module.exports = {
   name: 'give',
-  alias:["give"],
+  alias:["Give"],
   usage: `${prefa}give <amount> <@user>`,
   desc: 'Give a certain amount of coins to another user.',
   category:"Economy",

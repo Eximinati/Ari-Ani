@@ -1,4 +1,3 @@
-require('../../handler/MessageHandler')
 module.exports = {
 	name: "revoke",
 	alias: ["revok"],

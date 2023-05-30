@@ -57,7 +57,11 @@ let cm=commands.keys()
         } else {
         var emo=[ "📈" ,"📖","🍁","🍀","🌊","🎵","🔞","🎟","♨️","🉐" , "⚠️",]
         } 
-        let txt = `*Kon'nichiwa (｡♡‿♡｡)* ${pushName} Watashiwa *Ari-Ani*.
+        let txt = `*Hello (｡♡‿♡｡)* ${pushName} l'm *${process.env.NAME} *.
+	
+💡 *Tips:→ Script:* This is a private Script not forsale.
+💡 *Tips:→ Warning:* Dont use the bot in pm or you will be banned.
+💡 *Tips:→ Warning:* Dont call the bot or you will be banned.
                        
 🧧 *Prefix :* [ ${prefix} ]
                        

@@ -2,7 +2,7 @@ const Player = require("../../models/economic");
 
 module.exports = {
   name: 'rob',
-  alias: ['rob'],
+  alias: ['robbing'],
   desc: 'Attempt to rob another player.',
   category: 'Economy',
   react: '🏃‍♂️',

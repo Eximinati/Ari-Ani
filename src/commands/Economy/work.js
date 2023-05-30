@@ -2,34 +2,49 @@ const economyJs = require('../../models/economic')
 
 module.exports = {
   name: 'work',
-  alias:["work"],
+  alias:["Work"],
   usage:`${prefa}work`,
-  desc:"Work to earn coins.",
   category:"Economy",
-  cool:28800,
-  react:"✅",
-    start:async(client,m,{command,prefix,pushname , pushName,args})=>{
+   react: "💼",
+   start: async(client, m, { text, prefix, isBotAdmin,isAdmin,mentionByTag}) => {
+      const works = [
+        { name: 'Programmer', min: 100, max: 200 },
+        { name: 'Designer', min: 80, max: 150 },
+        { name: 'Writer', min: 70, max: 120 },
+        { name: 'Photographer', min: 90, max: 180 },
+        { name: 'Teacher', min: 60, max: 100 }
+    ]
+    const work = getRandomWork(works)
+    const earnings = Math.floor(Math.random() * (work.max - work.min + 1)) + work.min;
+    await economyJs.updateOne({ userId: m.sender }, { $inc: { wallet: earnings } });
+   m.reply(`👨‍💼 You worked as a ${work.name} and earned *${earnings}*`)
 
-      if (!m.from.endsWith("@g.us")) {
-        return m.reply("Please use this command in a group.");
-      }
-  
-
-  
+    function getRandomWork(works) {
+        const randomIndex = Math.floor(Math.random() * works.length);
+        const work = works[randomIndex];
+        let payout;
       
-  
-        const minCoins = 100;
-    const maxCoins = 1000;
-    const earnedCoins = Math.floor(Math.random() * (maxCoins - minCoins + 1)) + minCoins;
-
-    const economy = await economyJs.findOne({ userId: m.sender });
-    if (!economy) return m.reply('You don\'t have an economy profile.');
-
-    economy.wallet += earnedCoins;
-    await economy.save();
-
-    m.reply(`You worked hard and earned ${earnedCoins} coins!`);
-  
+        switch (work.name) {
+          case 'Programmer':
+            payout = { min: 100, max: 200 };
+            break;
+          case 'Designer':
+            payout = { min: 80, max: 150 };
+            break;
+          case 'Writer':
+            payout = { min: 70, max: 120 };
+            break;
+          case 'Photographer':
+            payout = { min: 90, max: 180 };
+            break;
+          case 'Teacher':
+            payout = { min: 60, max: 100 };
+            break;
+          default:
+            payout = { min: 0, max: 0 };
+        }
       
+        return { ...work, ...payout };
     }
+}
 }

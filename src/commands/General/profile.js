@@ -1,9 +1,8 @@
-require('../../handler/MessageHandler')
 let {
     TelegraPh,
     fetchBuffer,
     buffergif
-} = require('../../../lib/Function')
+} = require('../../lib/Function')
 const util = require('util')
 const fs = require('fs')
 const axios = require("axios")

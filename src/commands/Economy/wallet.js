@@ -23,7 +23,7 @@ module.exports = {
     const wallet = economy.wallet.toLocaleString();
     const bank = economy.bank.toLocaleString();
 
-    let walText = `\n*❁財⍩𝕎𝕒𝕝𝕝𝕖𝕥 - 💴*\n\nName: ${pushName}\n\nWallet: ${wallet}`
+    let walText = `\n*❁財⍩Your Wallet - 💴*\n\nName: ${pushName}\n\nWallet: ${wallet}`
     
     // let button = [
     //     { buttonId: `${prefix}bank`, buttonText: { displayText: 'Bank' }, type: 1 },
