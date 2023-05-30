@@ -25,17 +25,7 @@ module.exports = {
 
     let walText = `\n*❁財⍩𝕎𝕒𝕝𝕝𝕖𝕥 - 💴*\n\n〽️Name: ${pushName}\n\n🆔️Tag: ${tag}\n\n👛Wallet: ${wallet}`
     
-    // let button = [
-    //     { buttonId: `${prefix}bank`, buttonText: { displayText: 'Bank' }, type: 1 },
-    //   ];
-
-    //   let buttonMessage = {
-    //       text: walText,
-    //       footer: "Ari-Ani",
-    //       buttons: button,
-    //       headerType: 1
-    //     };
-
-        await client.sendMessage(m.from , {text: walText} , {quoted:m})
+m.reply(walText)
+    // await client.sendMessage(m.from , {text: walText} , {quoted:m})
   }
 };
