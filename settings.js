@@ -24,3 +24,6 @@ fs.watchFile(file, () => {
   delete require.cache[file];
   require(file);
 });
+
+
+//Everything written here is not copy righted. You can use as your need.
