@@ -15,7 +15,7 @@ module.exports={
                 m.reply(text)
             })
             .catch((err) => {
-                m.reply(`🔍 Error: ${err}`)
+                m.reply(`🔍 Errors: ${err}`)
             })
     }
 }
